@@ -1,0 +1,130 @@
+
+.link-back {
+    @extend .container;
+    padding: 15px 0;
+    @include p;
+    border-top: 2px solid #ddd;
+    border-bottom: 2px solid #ddd;
+
+    a {
+        display: block;
+        position: relative;
+        padding: 0 0 0 30px;
+        color: #000;
+        text-decoration: none;
+        font-size: 16px;
+        font-weight: 600;
+        span {
+            display: block;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+        i {
+            position: absolute;
+            top: -3px;
+            left: 0;
+            margin: 0 10px 0 0;
+            color: $main-color;
+            font-size: 20px;
+        }
+    }
+}
+
+.catalog {
+
+}
+.catalog__wrapper {
+    @extend .container;
+    @include p;
+}
+
+.catalog__list {
+    margin: 0;
+    padding: 10px 0;
+    list-style: none;
+}
+.catalog__list-item {
+
+    margin: 0 0 10px 0;
+    >a {
+        position: relative;
+        display: block;
+        padding: 8px;
+        font-size: 16px;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: #111;
+        background-color: #ddd;
+        i {
+            position: absolute;
+            right: 8px;
+            top: -2px;
+            font-size: 36px;
+        }
+    }
+
+}
+.catalog__list-item.active {
+
+}
+.catalog__list-item_pink_bg {
+    >a {
+        background-color: lighten($main-color, 30%);
+        i {
+            color: $main-color;
+        }
+    }
+}
+
+.catalog__list-item_pink_bg-text {
+    >a {
+        background-color: lighten($main-color, 30%);
+        color: $main-color;
+        i {
+            color: $main-color;
+        }
+    }
+}
+.catalog__under-list {
+    display: none;
+    padding: 10px 0 0 0;
+    margin: 0;
+    list-style: none;
+}
+.catalog__under-list-item {
+    position: relative;
+    padding: 0 0 0 38px;
+    a {
+        display: block;
+        padding: 8px 0;
+        text-decoration: none;
+        color: #000;
+        font-size: 14px;
+    }
+    &:before {
+        content: '';
+        position: absolute;
+        left: 28px;
+        top: 50%;
+        margin-top: -2px;
+        width: 5px;
+        height: 5px;
+        border-radius: 50%;
+        background-color: $main-color;
+    }
+    &:active {
+        background-color: lighten($accent-color, 45%);
+        a {
+            color: $main-color;
+            font-weight: 500;
+        }
+    }
+}
+.catalog__under-list-item.active {
+    background-color: lighten($accent-color, 45%);
+    a {
+        color: $main-color;
+        font-weight: 500;
+    }
+}

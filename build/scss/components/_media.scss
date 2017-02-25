@@ -1,0 +1,381 @@
+@import "bourbon";
+
+/*==========  Desktop First Method  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px) {
+
+}
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px) {
+
+}
+/* Small Devices, Tablets */
+@media only screen and (max-width : 768px) {
+
+	/*Disable Animation on Mobile Devices*/
+	.animated {
+		/*CSS transitions*/
+		-o-transition-property: none !important;
+		-moz-transition-property: none !important;
+		-ms-transition-property: none !important;
+		-webkit-transition-property: none !important;
+		transition-property: none !important;
+		/*CSS transforms*/
+		-o-transform: none !important;
+		-moz-transform: none !important;
+		-ms-transform: none !important;
+		-webkit-transform: none !important;
+		transform: none !important;
+		/*CSS animations*/
+		-webkit-animation: none !important;
+		-moz-animation: none !important;
+		-o-animation: none !important;
+		-ms-animation: none !important;
+		animation: none !important;
+	}
+}
+
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 480px) {
+
+}
+
+
+/* Custom, iPhone Retina */
+@media only screen and (max-width : 320px) {
+	/**/
+}
+
+
+/*==========  Mobile First Method  ==========*/
+
+/* Custom, iPhone Retina */
+@media only screen and (min-width : 320px) {
+	/**/
+}
+@media only screen and (min-width : 425px) {
+	.main-slider__item-title {
+		font-size: 18px;
+	}
+	.main-catalog__item-img {
+		i {
+			font-size: 30px;
+		}
+	}
+	.main-stock__item-text {
+		font-size: 14px;
+	}
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width : 480px) {
+	.header__nav-login,
+	.header__nav-reg {
+		font-size: 16px;
+	}
+	// .header__nav-menu,
+	// .header__nav-order-inform,
+	// .header__nav-aboutus-inform {
+	// 	font-size: 14px;
+	// }
+	.main-slider__item-title {
+		font-size: 22px;
+	}
+	.main-slider,
+	.product__slider {
+		.owl-dots {
+			.owl-dot {
+				width: 10px;
+				height: 10px;
+				margin: 0 8px;
+			}
+		}
+	}
+	.main-catalog__item {
+	    padding: 15px 0;
+	}
+	.main-catalog__item-img {
+		i {
+			font-size: 36px;
+		}
+	}
+	.main-catalog__item-text {
+	    font-size: 13px;
+	}
+	.main-popular__wrapper .main-popular__item,
+	.catalog-list__item-box .catalog-list__item {
+	    float: left;
+	    width: 31%;
+	    margin: 0 3.5% 20px 0;
+	}
+	.main-popular__wrapper .main-popular__item:nth-child(3n+3),
+	.catalog-list__item-box .catalog-list__item:nth-child(3n+3) {
+	    margin: 0 0 20px 0;
+	}
+	.main-popular__item_new {
+	    .main-popular__item-img {
+	        &:before {
+				width: 100px;
+				height: 58px;
+			}
+		}
+	}
+	.main-popular__item_discount {
+	    .main-popular__item-img {
+	        &:before {
+	            width: 50px;
+	            height: 50px;
+	        }
+	        span {
+				width: 50px;
+	            height: 50px;
+	            line-height: 50px;
+	            font-size: 14px;
+	        }
+	    }
+	}
+	.main-popular__item-name,
+	.main-popular__item-price {
+		font-size: 13px;
+	}
+	.main-stock__item-text {
+		font-size: 16px;
+	}
+	.footer__nav {
+		ul {
+			li {
+				a {
+					font-size: 15px;
+				}
+			}
+		}
+	}
+	.footer__link {
+		a {
+			font-size: 15px;
+		}
+	}
+	.link-back {
+		a {
+			font-size: 17px;
+		}
+	}
+	.catalog__list-item {
+		a {
+			font-size: 17px;
+		}
+	}
+	.filter__tabs-item {
+		button {
+			font-size: 16px;
+		}
+	}
+	.filter__item_sort {
+		label {
+			span {
+				font-size: 15px;
+				i {
+					left: -22px;
+					font-size: 18px;
+				}
+			}
+
+		}
+	}
+	.filter__sorting-item,
+	.filter__selected-item-value,
+	.filter__filtrate-search,
+	.filter__filtrate-size-item,
+	.filter__filtrate-price-item,
+	.filter__filtrate-price-discount,
+	.filter__filtrate-species-item,
+	.filter__filtrate-style-item,
+	.filter__filtrate-season-item,
+	.filter__filtrate-composition-item,
+	.filter__filtrate-manufacturer-item {
+		span {
+			font-size: 13px;
+		}
+	}
+	.filter__selected-item-value {
+		font-size: 13px;
+	}
+	.filter__filtrate-item-title {
+		font-size: 15px;
+	}
+	.product__inform-article {
+		font-size: 13px;
+	}
+	.product__inform-price {
+		font-size: 19px;
+	}
+	.product__inform-buttons-basket,
+	.product__inform-buttons-oneclick {
+		font-size: 16px;
+	}
+	.product__inform-size-title,
+	.product__inform-description-title,
+	.product__reviews-title {
+		font-size: 16px;
+	}
+	.product__inform-description-name,
+	.product__inform-description-composition,
+	.product__inform-description-text,
+	.product__inform-description-manufacturer {
+		font-size: 13px;
+	}
+}
+@media only screen and (min-width : 640px) {
+	.main-slider__item-title {
+		font-size: 27px;
+	}
+	.main-catalog__item-img {
+		i {
+			font-size: 40px;
+		}
+	}
+	.main-stock__item-text {
+		font-size: 18px;
+	}
+
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width : 768px) {
+	.header__nav-login,
+	.header__nav-reg {
+		font-size: 18px;
+	}
+	// .header__nav-menu,
+	// .header__nav-order-inform,
+	// .header__nav-aboutus-inform {
+	// 	font-size: 15px;
+	// }
+	.main-slider__item-title {
+		font-size: 32px;
+	}
+	.main-slider,
+	.product__slider {
+		.owl-dots {
+			.owl-dot {
+				width: 12px;
+				height: 12px;
+				margin: 0 8px;
+			}
+		}
+	}
+	.main-catalog__item {
+	    padding: 20px 0;
+	}
+	.main-catalog__item-text {
+	    font-size: 15px;
+	}
+	.main-catalog__item-img {
+		i {
+			font-size: 46px;
+		}
+	}
+	.main-popular__item-name,
+	.main-popular__item-price {
+		font-size: 14px;
+	}
+	.main-stock__item-text {
+		font-size: 20px;
+	}
+	.footer__nav {
+		ul {
+			li {
+				a {
+					font-size: 17px;
+				}
+			}
+		}
+	}
+	.footer__link {
+		a {
+			font-size: 17px;
+		}
+	}
+	.link-back {
+		a {
+			font-size: 18px;
+		}
+	}
+	.catalog__list-item {
+		a {
+			font-size: 18px;
+		}
+	}
+	.filter__tabs-item {
+		button {
+			font-size: 18px;
+		}
+	}
+	.filter__item_sort {
+		label {
+			span {
+				font-size: 16px;
+				i {
+					left: -25px;
+					font-size: 20px;
+				}
+			}
+
+		}
+	}
+	.filter__sorting-item,
+	.filter__filtrate-search,
+	.filter__filtrate-size-item,
+	.filter__filtrate-price-item,
+	.filter__filtrate-price-discount,
+	.filter__filtrate-species-item,
+	.filter__filtrate-style-item,
+	.filter__filtrate-season-item,
+	.filter__filtrate-composition-item,
+	.filter__filtrate-manufacturer-item {
+		span {
+			font-size: 14px;
+		}
+	}
+	.filter__selected-item-value {
+		font-size: 14px;
+	}
+	.filter__filtrate-item-title {
+		font-size: 16px;
+	}
+	.product__inform-article {
+		font-size: 14px;
+	}
+	.product__inform-price {
+		font-size: 20px;
+	}
+	.product__inform-buttons-basket,
+	.product__inform-buttons-oneclick {
+		font-size: 17px;
+	}
+	.product__inform-size-title,
+	.product__inform-description-title,
+	.product__reviews-title {
+		font-size: 17px;
+	}
+	.product__inform-description-name,
+	.product__inform-description-composition,
+	.product__inform-description-text,
+	.product__inform-description-manufacturer {
+		font-size: 14px;
+	}
+}
+
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width : 992px) {
+	/**/
+}
+
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width : 1200px) {
+	/**/
+}

@@ -1,0 +1,5507 @@
+@charset "UTF-8";
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
+body {
+  margin: 0;
+}
+
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
+}
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
+}
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0;
+}
+
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
+}
+
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
+}
+
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
+  position: relative;
+  vertical-align: baseline;
+}
+
+sup {
+  top: -0.5em;
+}
+
+sub {
+  bottom: -0.25em;
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
+}
+
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
+}
+
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
+}
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
+  padding: 0;
+}
+
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
+}
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
+}
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma.eot");
+  src: url("../fonts/Tahoma.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma.woff2") format("woff2"), url("../fonts/Tahoma.woff") format("woff"), url("../fonts/Tahoma.ttf") format("truetype"), url("../fonts/Tahoma.svg#Tahoma") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Tahoma";
+  src: url("../fonts/Tahoma-Bold.eot");
+  src: url("../fonts/Tahoma-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/Tahoma-Bold.woff2") format("woff2"), url("../fonts/Tahoma-Bold.woff") format("woff"), url("../fonts/Tahoma-Bold.ttf") format("truetype"), url("../fonts/Tahoma-Bold.svg#Tahoma-Bold") format("svg");
+  font-weight: bold;
+  font-style: normal;
+}
+
+*::-webkit-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*::-moz-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+*:-ms-input-placeholder {
+  color: #666;
+  opacity: 1;
+}
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+  color: #666;
+}
+
+body input:required:valid,
+body textarea:required:valid {
+  color: #666;
+}
+
+*,
+*:before,
+*:after {
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  margin: 0;
+  font-size: 12px;
+  min-width: 320px;
+  position: relative;
+  line-height: 1;
+  font-family: "Tahoma", sans-serif;
+  color: #111;
+  background-color: #fff;
+}
+
+.container,
+.header__wrapper,
+.main-slider__wrapper,
+.main-catalog__wrapper,
+.main-popular__wrapper,
+.main-stock__wrapper,
+.footer__wrapper,
+.link-back,
+.catalog__wrapper,
+.filter__wrapper,
+.catalog-list,
+.product {
+  max-width: 768px;
+  margin: 0 auto;
+}
+
+.clearfix:after,
+.header__wrapper:after,
+.header__search:after,
+.main-catalog__wrapper:after,
+.main-popular__wrapper:after,
+.footer__nav ul:after,
+.filter__tabs:after,
+.catalog-list__item-box:after,
+.product__inform:after,
+.product__reviews-item:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+a {
+  outline: none !important;
+}
+
+.header {
+  position: relative;
+  padding: 10px 0;
+}
+
+.header__wrapper {
+  position: relative;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.header__nav-button {
+  float: left;
+  margin: 8px 6.4% 0 0;
+  width: 22px;
+  height: 22px;
+  text-align: center;
+  line-height: 22px;
+  color: #f02d68;
+  font-size: 24px;
+}
+
+.header__logo {
+  float: left;
+}
+
+.header__basket-button {
+  float: right;
+  margin: 8px 0 0 11.2%;
+}
+.header__basket-button a {
+  text-decoration: none;
+  color: #f02d68;
+}
+.header__basket-button a i {
+  font-size: 22px;
+}
+
+.header__search-button {
+  float: right;
+  margin: 8px 0 0 0;
+  color: #f02d68;
+}
+.header__search-button i {
+  font-size: 22px;
+}
+
+.header__search {
+  display: none;
+  clear: both;
+  padding: 10px 0 0 0;
+}
+.header__search input {
+  float: left;
+  width: 75%;
+  height: 24px;
+  line-height: 24px;
+  padding: 0 10px;
+  font-size: 14px;
+  border: 1px solid #f02d68;
+  -webkit-border-top-left-radius: 3px;
+  border-top-left-radius: 3px;
+  -webkit-border-bottom-left-radius: 3px;
+  border-bottom-left-radius: 3px;
+  outline: none;
+}
+.header__search button {
+  float: right;
+  width: 25%;
+  height: 24px;
+  line-height: 24px;
+  font-size: 13px;
+  color: #fff;
+  border: none;
+  outline: none;
+  background-color: #f02d68;
+  text-transform: uppercase;
+  -webkit-border-top-right-radius: 3px;
+  border-top-right-radius: 3px;
+  -webkit-border-bottom-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+}
+
+.header__nav {
+  display: none;
+  position: absolute;
+  z-index: 10;
+  top: 10px;
+  left: 0;
+  right: 0;
+  padding: 10px 3.2%;
+  background-color: #f02d68;
+}
+
+.header__nav-userblock {
+  padding: 15px 0;
+  text-transform: uppercase;
+  border-bottom: 1px solid #fff;
+}
+
+.header__nav-login {
+  position: relative;
+  display: inline-block;
+  padding: 0 0 0 32px;
+  margin: 0 19.84% 0 0;
+  vertical-align: top;
+  font-size: 14px;
+}
+.header__nav-login i {
+  position: absolute;
+  left: 0;
+  top: -6px;
+  margin: 0 10px 0 0;
+  font-size: 24px;
+  color: #fff;
+}
+.header__nav-login a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.header__nav-reg {
+  display: inline-block;
+  vertical-align: top;
+  font-size: 14px;
+}
+.header__nav-reg a {
+  color: #fff;
+}
+
+.header__nav-menu {
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+}
+.header__nav-menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.header__nav-menu ul li a {
+  position: relative;
+  display: block;
+  padding: 15px 0 15px 20.4%;
+  text-decoration: none;
+  color: #fff;
+}
+.header__nav-menu ul li a i {
+  position: absolute;
+  left: 0;
+  top: 9px;
+  font-size: 26px;
+  color: #fff;
+}
+
+.header__nav-order-inform,
+.header__nav-aboutus-inform {
+  padding: 5px 0;
+  border-bottom: 1px solid #fff;
+  font-size: 15px;
+}
+.header__nav-order-inform ul,
+.header__nav-aboutus-inform ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.header__nav-order-inform ul li a,
+.header__nav-aboutus-inform ul li a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #fff;
+}
+.header__nav-order-inform ul li a:active,
+.header__nav-aboutus-inform ul li a:active {
+  background-color: #f35d8a;
+}
+
+.header__nav-aboutus-inform {
+  border: none;
+}
+
+.main-slider__inner {
+  position: relative;
+}
+.main-slider__inner .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.main-slider__inner .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.main-slider__inner .owl-dots .owl-dot.active {
+  background-color: #661272;
+}
+
+.main-slider__item {
+  position: relative;
+}
+
+.main-slider__item-title {
+  position: absolute;
+  z-index: 1;
+  width: 32%;
+  left: 40%;
+  top: 50%;
+  -webkit-transform: translate(-40%, -50%);
+  -ms-transform: translate(-40%, -50%);
+  transform: translate(-40%, -50%);
+  font-size: 14px;
+  font-style: italic;
+  font-weight: 600;
+  color: #661272;
+  line-height: 1.3;
+}
+
+.main-slider__item-img img {
+  width: 100%;
+  height: auto;
+}
+
+.main-catalog {
+  padding: 10px 0;
+}
+
+.main-catalog__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-catalog__item {
+  float: left;
+  width: 25%;
+  padding: 10px 0;
+  text-decoration: none;
+}
+
+.main-catalog__item-img {
+  position: relative;
+  margin: 0 0 8px 0;
+  line-height: 100%;
+  text-align: center;
+}
+.main-catalog__item-img img {
+  width: 100%;
+  height: auto;
+}
+.main-catalog__item-img i {
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 50%;
+  font-size: 26px;
+  color: #f02d68;
+}
+
+.main-catalog__item-text {
+  padding: 0 10%;
+  color: #f02d68;
+  font-size: 11px;
+  text-align: center;
+  font-weight: 600;
+}
+
+.main-popular {
+  padding: 10px 0;
+}
+
+.main-popular__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.main-popular__item {
+  float: left;
+  width: 47.5%;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+
+.main-popular__item:nth-child(odd) {
+  margin: 0 5% 20px 0;
+}
+
+.main-popular__item_new .main-popular__item-img:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 79px;
+  height: 46px;
+  background-image: url(../img/new.png);
+  background-size: cover;
+}
+
+.main-popular__item_discount .main-popular__item-img:before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/discount.png);
+  background-size: cover;
+}
+
+.main-popular__item_discount .main-popular__item-img span {
+  position: absolute;
+  right: 10px;
+  bottom: 10px;
+  width: 45px;
+  height: 45px;
+  color: #fff;
+  line-height: 45px;
+  text-align: center;
+  font-size: 12px;
+}
+
+.main-popular__item-img {
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.main-popular__item-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-popular__item-name {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #000;
+}
+
+.main-popular__item-price {
+  font-size: 12px;
+  text-align: center;
+  font-weight: 600;
+  color: #f02d68;
+}
+
+.main-stock__item {
+  position: relative;
+}
+
+.main-stock__item-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.main-stock__item-text {
+  position: absolute;
+  width: 45%;
+  right: 5%;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.main-stock__item-text p {
+  margin: 0;
+  line-height: 1.6;
+}
+.main-stock__item-text span {
+  color: #fff;
+}
+
+.footer__wrapper {
+  background-color: #f02d68;
+  padding-bottom: 15px;
+}
+
+.footer__nav {
+  padding-left: 10px;
+  padding-right: 10px;
+  background-color: #fff;
+}
+.footer__nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+.footer__nav ul li {
+  float: left;
+  width: 25%;
+}
+.footer__nav ul li a {
+  display: block;
+  padding: 18px 0;
+  text-align: center;
+  color: #f02d68;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  font-size: 13px;
+}
+
+.footer__social {
+  padding: 10px 0;
+  text-align: center;
+}
+
+.footer__social-item {
+  display: inline-block;
+  vertical-align: top;
+  width: 35px;
+  height: 35px;
+  text-decoration: none;
+  background-color: #fff;
+  color: #f02d68;
+  margin: 0 1.6%;
+  line-height: 35px;
+  background-color: #fff;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  font-size: 21px;
+}
+
+.footer__link {
+  padding: 15px 10px;
+  text-align: center;
+}
+.footer__link a {
+  display: block;
+  padding: 8px 0;
+  border: 1px solid #fff;
+  color: #fff;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+.footer__copy {
+  padding: 8px 0;
+  font-size: 12px;
+  line-height: 1.2;
+  color: #fff;
+  text-align: center;
+}
+
+.link-back {
+  padding: 15px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-top: 2px solid #ddd;
+  border-bottom: 2px solid #ddd;
+}
+.link-back a {
+  display: block;
+  position: relative;
+  padding: 0 0 0 30px;
+  color: #000;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 600;
+}
+.link-back a span {
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.link-back a i {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  margin: 0 10px 0 0;
+  color: #f02d68;
+  font-size: 20px;
+}
+
+.catalog__wrapper {
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.catalog__list {
+  margin: 0;
+  padding: 10px 0;
+  list-style: none;
+}
+
+.catalog__list-item {
+  margin: 0 0 10px 0;
+}
+.catalog__list-item>a {
+  position: relative;
+  display: block;
+  padding: 8px;
+  font-size: 16px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #111;
+  background-color: #ddd;
+}
+.catalog__list-item>a i {
+  position: absolute;
+  right: 8px;
+  top: -2px;
+  font-size: 36px;
+}
+
+.catalog__list-item_pink_bg>a {
+  background-color: #fabccf;
+}
+.catalog__list-item_pink_bg>a i {
+  color: #f02d68;
+}
+
+.catalog__list-item_pink_bg-text>a {
+  background-color: #fabccf;
+  color: #f02d68;
+}
+.catalog__list-item_pink_bg-text>a i {
+  color: #f02d68;
+}
+
+.catalog__under-list {
+  display: none;
+  padding: 10px 0 0 0;
+  margin: 0;
+  list-style: none;
+}
+
+.catalog__under-list-item {
+  position: relative;
+  padding: 0 0 0 38px;
+}
+.catalog__under-list-item a {
+  display: block;
+  padding: 8px 0;
+  text-decoration: none;
+  color: #000;
+  font-size: 14px;
+}
+.catalog__under-list-item:before {
+  content: "";
+  position: absolute;
+  left: 28px;
+  top: 50%;
+  margin-top: -2px;
+  width: 5px;
+  height: 5px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  background-color: #f02d68;
+}
+.catalog__under-list-item:active {
+  background-color: #fed7ee;
+}
+.catalog__under-list-item:active a {
+  color: #f02d68;
+  font-weight: 500;
+}
+
+.catalog__under-list-item.active {
+  background-color: #fed7ee;
+}
+.catalog__under-list-item.active a {
+  color: #f02d68;
+  font-weight: 500;
+}
+
+.filter__tabs-item {
+  float: left;
+  width: 50%;
+  border-bottom: 1px solid #ddd;
+}
+.filter__tabs-item button {
+  display: block;
+  width: 100%;
+  padding: 15px 0;
+  outline: none;
+  border: none;
+  background-color: #fff;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 15px;
+  color: #eb058a;
+  text-align: center;
+}
+.filter__tabs-item button span {
+  border-bottom: 1px dotted #eb058a;
+}
+.filter__tabs-item button i {
+  margin-left: 5px;
+  color: #000;
+  font-size: 16px;
+}
+
+.filter__tabs-item:first-child {
+  border-right: 1px solid #ddd;
+}
+
+.filter__tabs-item.active {
+  border-bottom: none;
+}
+.filter__tabs-item.active button {
+  color: #000;
+}
+.filter__tabs-item.active button span {
+  border-bottom: none;
+}
+.filter__tabs-item.active button i {
+  color: #ccc;
+}
+
+.filter__selected {
+  padding: 0 0 10px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-bottom: 2px solid #eb058a;
+}
+
+.filter__selected-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 0;
+  margin: 0 25px 0 0;
+}
+
+.filter__selected-button-reset {
+  padding: 10px 0;
+  text-align: center;
+}
+.filter__selected-button-reset button {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background-color: #fabccf;
+  color: #eb058a;
+  border: 1px solid #eb058a;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  font-size: 12px;
+}
+.filter__selected-button-reset button i {
+  margin-left: 5px;
+}
+
+.filter__selected-item-reset {
+  display: inline-block;
+  vertical-align: middle;
+  padding: 0;
+  width: 19px;
+  height: 19px;
+  margin-right: 5px;
+  line-height: 19px;
+  text-align: center;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  color: #fff;
+  font-size: 14px;
+  background-color: #888;
+  border: none;
+  outline: none;
+}
+.filter__selected-item-reset i {
+  position: relative;
+  top: -1px;
+}
+
+.filter__selected-item-value {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 12px;
+}
+.filter__selected-item-value img {
+  width: 20px;
+  height: 20px;
+}
+
+.filter__item {
+  display: none;
+}
+
+.filter__item.active {
+  display: block;
+}
+
+.filter__sorting {
+  padding: 10px 10px 10px 40px;
+}
+
+.filter__sorting-item {
+  display: block;
+  margin: 0 0 10px 0;
+}
+.filter__sorting-item input {
+  display: none;
+}
+.filter__sorting-item span {
+  position: relative;
+  font-size: 12px;
+}
+.filter__sorting-item span i {
+  position: absolute;
+  left: -20px;
+  top: -2px;
+  display: none;
+  font-size: 16px;
+  color: #eb058a;
+}
+.filter__sorting-item input:checked~span i {
+  display: block;
+}
+
+.filter__filtrate-search {
+  display: block;
+  padding: 20px 0 20px 42px;
+  font-size: 12px;
+}
+.filter__filtrate-search span {
+  position: relative;
+}
+.filter__filtrate-search span i {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  display: none;
+  font-size: 16px;
+  color: #eb058a;
+}
+.filter__filtrate-search span:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #eb058a;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fabccf;
+}
+.filter__filtrate-search input {
+  display: none;
+}
+.filter__filtrate-search input:checked~span i {
+  display: block;
+}
+
+.filter__filtrate-item {
+  border-top: 1px solid #ddd;
+}
+.filter__filtrate-item fieldset {
+  display: none;
+}
+
+.filter__filtrate-item.active .filter__filtrate-item-title {
+  background-color: #fabccf;
+}
+
+.filter__filtrate-item-title {
+  position: relative;
+  display: block;
+  padding: 12px 10px;
+  text-transform: uppercase;
+  font-size: 14px;
+}
+.filter__filtrate-item-title i {
+  position: absolute;
+  right: 10px;
+  top: 13px;
+  font-size: 16px;
+}
+
+.filter__filtrate-size fieldset {
+  border: none;
+  padding: 15px 0 5px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filter__filtrate-size-item {
+  float: left;
+  width: 25%;
+  padding: 0 0 15px 30px;
+}
+.filter__filtrate-size-item input {
+  display: none;
+}
+.filter__filtrate-size-item span {
+  position: relative;
+  font-size: 12px;
+}
+.filter__filtrate-size-item span i {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  display: none;
+  font-size: 16px;
+  color: #eb058a;
+}
+.filter__filtrate-size-item span:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #eb058a;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fabccf;
+}
+.filter__filtrate-size-item input:checked~span i {
+  display: block;
+}
+
+.filter__filtrate-price fieldset {
+  border: none;
+  padding: 15px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filter__filtrate-price-item {
+  float: left;
+  width: 50%;
+  padding: 0 0 0 5px;
+}
+.filter__filtrate-price-item span {
+  margin-right: 5px;
+  font-size: 12px;
+}
+.filter__filtrate-price-item input {
+  height: 35px;
+  max-width: 108px;
+  padding: 10px;
+  border: 1px solid #eb058a;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fabccf;
+  outline: none;
+}
+
+.filter__filtrate-price-discount {
+  clear: both;
+  display: block;
+  padding: 20px 0 0 30px;
+}
+.filter__filtrate-price-discount input {
+  display: none;
+}
+.filter__filtrate-price-discount span {
+  position: relative;
+  font-size: 12px;
+}
+.filter__filtrate-price-discount span i {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  display: none;
+  font-size: 16px;
+  color: #eb058a;
+}
+.filter__filtrate-price-discount span:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #eb058a;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fabccf;
+}
+.filter__filtrate-price-discount input:checked~span i {
+  display: block;
+}
+
+.filter__filtrate-species fieldset,
+.filter__filtrate-style fieldset,
+.filter__filtrate-season fieldset,
+.filter__filtrate-composition fieldset,
+.filter__filtrate-manufacturer fieldset {
+  border: none;
+  padding: 15px 0 5px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filter__filtrate-species-item,
+.filter__filtrate-style-item,
+.filter__filtrate-season-item,
+.filter__filtrate-composition-item,
+.filter__filtrate-manufacturer-item {
+  display: block;
+  padding: 0 0 15px 30px;
+}
+.filter__filtrate-species-item input,
+.filter__filtrate-style-item input,
+.filter__filtrate-season-item input,
+.filter__filtrate-composition-item input,
+.filter__filtrate-manufacturer-item input {
+  display: none;
+}
+.filter__filtrate-species-item span,
+.filter__filtrate-style-item span,
+.filter__filtrate-season-item span,
+.filter__filtrate-composition-item span,
+.filter__filtrate-manufacturer-item span {
+  position: relative;
+  font-size: 12px;
+}
+.filter__filtrate-species-item span i,
+.filter__filtrate-style-item span i,
+.filter__filtrate-season-item span i,
+.filter__filtrate-composition-item span i,
+.filter__filtrate-manufacturer-item span i {
+  position: absolute;
+  left: -25px;
+  top: -2px;
+  display: none;
+  font-size: 16px;
+  color: #eb058a;
+}
+.filter__filtrate-species-item span:before,
+.filter__filtrate-style-item span:before,
+.filter__filtrate-season-item span:before,
+.filter__filtrate-composition-item span:before,
+.filter__filtrate-manufacturer-item span:before {
+  content: "";
+  position: absolute;
+  left: -25px;
+  top: -1px;
+  width: 15px;
+  height: 15px;
+  border: 1px solid #eb058a;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fabccf;
+}
+.filter__filtrate-species-item input:checked~span i,
+.filter__filtrate-style-item input:checked~span i,
+.filter__filtrate-season-item input:checked~span i,
+.filter__filtrate-composition-item input:checked~span i,
+.filter__filtrate-manufacturer-item input:checked~span i {
+  display: block;
+}
+
+.filter__filtrate-color {
+  border-bottom: 1px solid #ddd;
+}
+.filter__filtrate-color fieldset {
+  border: none;
+  padding: 15px 0 5px 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.filter__filtrate-color-item {
+  float: left;
+  width: 25%;
+  padding: 0 0 15px 5px;
+}
+.filter__filtrate-color-item input {
+  display: none;
+}
+.filter__filtrate-color-item img {
+  width: 20px;
+  height: 20px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+.filter__filtrate-color-item input:checked~img {
+  border: 2px solid #eb058a;
+}
+
+.filter__filtrate-submit {
+  padding: 20px 0 0 0;
+  text-align: center;
+}
+.filter__filtrate-submit button {
+  border: none;
+  outline: none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  background-color: #eb058a;
+  color: #fff;
+  text-transform: uppercase;
+  padding: 10px 35px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.catalog-list {
+  padding: 20px 0 0 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.catalog-list__pagination {
+  margin: 0 0 15px 0;
+  text-align: center;
+}
+
+.catalog-list__pagination-item {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px 10px;
+  margin: 0 3px;
+  text-decoration: none;
+  color: #f02d68;
+  border: 1px solid #f02d68;
+  font-size: 16px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.catalog-list__pagination-item.active {
+  color: #fff;
+  background-color: #f02d68;
+}
+
+.catalog-list__pagination-next {
+  display: inline-block;
+  vertical-align: top;
+  padding: 5px;
+  margin: 0 3px;
+  text-decoration: none;
+  color: #f02d68;
+  border: 1px solid #f02d68;
+  font-size: 16px;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  background-color: #fabccf;
+}
+
+.catalog-list__item {
+  float: left;
+  width: 47.5%;
+  margin: 0 0 20px 0;
+  text-decoration: none;
+}
+
+.catalog-list__item:nth-child(odd) {
+  margin: 0 5% 20px 0;
+}
+
+.catalog-list__item-img {
+  position: relative;
+  margin: 0 0 10px 0;
+}
+.catalog-list__item-img img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.catalog-list__item-name {
+  margin: 0 0 5px 0;
+  font-size: 12px;
+  font-weight: 600;
+  color: #f02d68;
+}
+
+.catalog-list__item-article {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  color: #000;
+}
+
+.catalog-list__item-price {
+  margin: 0 0 5px 0;
+  font-size: 14px;
+  font-weight: 600;
+  color: #f02d68;
+}
+
+.catalog-list__item-rating-stars {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 70px;
+  height: 13px;
+  background-image: url(../img/stars.png);
+}
+
+.catalog-list__item-rating-value {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 11px;
+  color: #000;
+}
+
+.product {
+  padding: 10px 0 0 0;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.product__slider-inner {
+  position: relative;
+}
+.product__slider-inner .owl-dots {
+  position: absolute;
+  left: 50%;
+  bottom: 5%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.product__slider-inner .owl-dots .owl-dot {
+  display: inline-block;
+  vertical-align: top;
+  width: 8px;
+  height: 8px;
+  margin: 0 5px;
+  background-color: #fff;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+}
+.product__slider-inner .owl-dots .owl-dot.active {
+  background-color: #661272;
+}
+
+.product__slider-item img {
+  width: 100%;
+  height: auto;
+}
+
+.product__inform {
+  padding: 10px 0 0 0;
+}
+
+.product__inform-brand {
+  float: left;
+}
+
+.product__inform-article {
+  float: right;
+  margin: 0 0 12px 0;
+  font-size: 12px;
+}
+
+.product__inform-price {
+  clear: right;
+  float: right;
+  font-size: 18px;
+  font-weight: 600;
+  color: #f02d68;
+}
+
+.product__inform-rating {
+  clear: both;
+  padding: 10px 0 15px 0;
+  text-align: center;
+}
+
+.product__inform-rating-stars {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 5px;
+  width: 100px;
+  height: 20px;
+  background-image: url(../img/stars-big.png);
+}
+
+.product__inform-rating-value {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  color: #000;
+}
+
+.product__inform-buttons-basket {
+  display: block;
+  padding: 12px 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+  background-color: #eb058a;
+}
+
+.product__inform-buttons-oneclick {
+  display: block;
+  padding: 12px 0;
+  margin: 0 0 10px 0;
+  text-align: center;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #eb058a;
+  background-color: #fabccf;
+}
+
+.product__inform-size {
+  margin: 20px 0 0 0;
+}
+
+.product__inform-size-title {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.product__inform-size-item {
+  display: inline-block;
+  vertical-align: top;
+  margin: 0 12px 15px 0;
+  font-size: 17px;
+  width: 44px;
+  height: 44px;
+  text-align: center;
+  line-height: 44px;
+  border: 1px solid #fabccf;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.product__inform-size-item.active {
+  color: #fff;
+  background-color: #eb058a;
+}
+
+.product__inform-size-link {
+  font-size: 14px;
+  text-transform: uppercase;
+}
+.product__inform-size-link a {
+  color: #eb058a;
+}
+
+.product__inform-description {
+  margin: 20px 0 0 0;
+}
+
+.product__inform-description-title {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.product__inform-description-name,
+.product__inform-description-composition,
+.product__inform-description-text {
+  margin: 0 0 10px 0;
+  font-size: 12px;
+  line-height: 1.4;
+}
+
+.product__inform-description-manufacturer {
+  margin: 0 0 10px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.product__reviews {
+  padding: 10px 0 0 0;
+  border-top: 1px solid #fabccf;
+}
+
+.product__reviews-title {
+  margin: 0 0 10px 0;
+  font-size: 15px;
+  font-weight: 600;
+  color: #eb058a;
+}
+
+.product__reviews-button {
+  margin: 0 0 10px 0;
+}
+.product__reviews-button button {
+  display: block;
+  width: 100%;
+  padding: 12px 0;
+  border: none;
+  outline: none;
+  background-color: #eb058a;
+  color: #fff;
+  text-align: center;
+  font-size: 15px;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+}
+
+.product__reviews-item {
+  padding: 10px 0;
+  border-bottom: 1px solid #fabccf;
+}
+
+.product__reviews-item-img {
+  float: left;
+  width: 45px;
+  height: 45px;
+  margin: 0 0 10px 0;
+}
+.product__reviews-item-img img {
+  width: 100%;
+  height: auto;
+}
+
+.product__reviews-item-name {
+  float: left;
+  clear: left;
+  width: 70px;
+  font-size: 11px;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+.product__reviews-item-box {
+  padding: 0 0 0 85px;
+}
+
+.product__reviews-item-rating {
+  width: 70px;
+  height: 13px;
+  margin: 0 0 10px 0;
+  background-image: url(../img/stars.png);
+}
+
+.product__reviews-item-date {
+  margin: 0 0 10px 0;
+  font-size: 11px;
+  color: #aaa;
+}
+
+.product__reviews-item-text {
+  font-size: 11px;
+  line-height: 1.1;
+}
+
+/*==========  Desktop First Method  ==========*/
+/* Large Devices, Wide Screens */
+/* Medium Devices, Desktops */
+/* Small Devices, Tablets */
+@media only screen and (max-width: 768px) {
+  /*Disable Animation on Mobile Devices*/
+  .animated {
+    /*CSS transitions*/
+    -webkit-transition-property: none !important;
+    transition-property: none !important;
+    /*CSS transforms*/
+    -ms-transform: none !important;
+    -webkit-transform: none !important;
+    transform: none !important;
+    /*CSS animations*/
+    -webkit-animation: none !important;
+    animation: none !important;
+  }
+}
+
+/* Extra Small Devices, Phones */
+/* Custom, iPhone Retina */
+@media only screen and (max-width: 320px) {
+  /**/
+}
+
+/*==========  Mobile First Method  ==========*/
+/* Custom, iPhone Retina */
+@media only screen and (min-width: 320px) {
+  /**/
+}
+
+@media only screen and (min-width: 425px) {
+  .main-slider__item-title {
+    font-size: 18px;
+  }
+  .main-catalog__item-img i {
+    font-size: 30px;
+  }
+  .main-stock__item-text {
+    font-size: 14px;
+  }
+}
+
+/* Extra Small Devices, Phones */
+@media only screen and (min-width: 480px) {
+  .header__nav-login,
+  .header__nav-reg {
+    font-size: 16px;
+  }
+  .main-slider__item-title {
+    font-size: 22px;
+  }
+  .main-slider .owl-dots .owl-dot,
+  .product__slider .owl-dots .owl-dot {
+    width: 10px;
+    height: 10px;
+    margin: 0 8px;
+  }
+  .main-catalog__item {
+    padding: 15px 0;
+  }
+  .main-catalog__item-img i {
+    font-size: 36px;
+  }
+  .main-catalog__item-text {
+    font-size: 13px;
+  }
+  .main-popular__wrapper .main-popular__item,
+  .catalog-list__item-box .catalog-list__item {
+    float: left;
+    width: 31%;
+    margin: 0 3.5% 20px 0;
+  }
+  .main-popular__wrapper .main-popular__item:nth-child(3n+3),
+  .catalog-list__item-box .catalog-list__item:nth-child(3n+3) {
+    margin: 0 0 20px 0;
+  }
+  .main-popular__item_new .main-popular__item-img:before {
+    width: 100px;
+    height: 58px;
+  }
+  .main-popular__item_discount .main-popular__item-img:before {
+    width: 50px;
+    height: 50px;
+  }
+  .main-popular__item_discount .main-popular__item-img span {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 14px;
+  }
+  .main-popular__item-name,
+  .main-popular__item-price {
+    font-size: 13px;
+  }
+  .main-stock__item-text {
+    font-size: 16px;
+  }
+  .footer__nav ul li a {
+    font-size: 15px;
+  }
+  .footer__link a {
+    font-size: 15px;
+  }
+  .link-back a {
+    font-size: 17px;
+  }
+  .catalog__list-item a {
+    font-size: 17px;
+  }
+  .filter__tabs-item button {
+    font-size: 16px;
+  }
+  .filter__item_sort label span {
+    font-size: 15px;
+  }
+  .filter__item_sort label span i {
+    left: -22px;
+    font-size: 18px;
+  }
+  .filter__sorting-item span,
+  .filter__selected-item-value span,
+  .filter__filtrate-search span,
+  .filter__filtrate-size-item span,
+  .filter__filtrate-price-item span,
+  .filter__filtrate-price-discount span,
+  .filter__filtrate-species-item span,
+  .filter__filtrate-style-item span,
+  .filter__filtrate-season-item span,
+  .filter__filtrate-composition-item span,
+  .filter__filtrate-manufacturer-item span {
+    font-size: 13px;
+  }
+  .filter__selected-item-value {
+    font-size: 13px;
+  }
+  .filter__filtrate-item-title {
+    font-size: 15px;
+  }
+  .product__inform-article {
+    font-size: 13px;
+  }
+  .product__inform-price {
+    font-size: 19px;
+  }
+  .product__inform-buttons-basket,
+  .product__inform-buttons-oneclick {
+    font-size: 16px;
+  }
+  .product__inform-size-title,
+  .product__inform-description-title,
+  .product__reviews-title {
+    font-size: 16px;
+  }
+  .product__inform-description-name,
+  .product__inform-description-composition,
+  .product__inform-description-text,
+  .product__inform-description-manufacturer {
+    font-size: 13px;
+  }
+}
+
+@media only screen and (min-width: 640px) {
+  .main-slider__item-title {
+    font-size: 27px;
+  }
+  .main-catalog__item-img i {
+    font-size: 40px;
+  }
+  .main-stock__item-text {
+    font-size: 18px;
+  }
+}
+
+/* Small Devices, Tablets */
+@media only screen and (min-width: 768px) {
+  .header__nav-login,
+  .header__nav-reg {
+    font-size: 18px;
+  }
+  .main-slider__item-title {
+    font-size: 32px;
+  }
+  .main-slider .owl-dots .owl-dot,
+  .product__slider .owl-dots .owl-dot {
+    width: 12px;
+    height: 12px;
+    margin: 0 8px;
+  }
+  .main-catalog__item {
+    padding: 20px 0;
+  }
+  .main-catalog__item-text {
+    font-size: 15px;
+  }
+  .main-catalog__item-img i {
+    font-size: 46px;
+  }
+  .main-popular__item-name,
+  .main-popular__item-price {
+    font-size: 14px;
+  }
+  .main-stock__item-text {
+    font-size: 20px;
+  }
+  .footer__nav ul li a {
+    font-size: 17px;
+  }
+  .footer__link a {
+    font-size: 17px;
+  }
+  .link-back a {
+    font-size: 18px;
+  }
+  .catalog__list-item a {
+    font-size: 18px;
+  }
+  .filter__tabs-item button {
+    font-size: 18px;
+  }
+  .filter__item_sort label span {
+    font-size: 16px;
+  }
+  .filter__item_sort label span i {
+    left: -25px;
+    font-size: 20px;
+  }
+  .filter__sorting-item span,
+  .filter__filtrate-search span,
+  .filter__filtrate-size-item span,
+  .filter__filtrate-price-item span,
+  .filter__filtrate-price-discount span,
+  .filter__filtrate-species-item span,
+  .filter__filtrate-style-item span,
+  .filter__filtrate-season-item span,
+  .filter__filtrate-composition-item span,
+  .filter__filtrate-manufacturer-item span {
+    font-size: 14px;
+  }
+  .filter__selected-item-value {
+    font-size: 14px;
+  }
+  .filter__filtrate-item-title {
+    font-size: 16px;
+  }
+  .product__inform-article {
+    font-size: 14px;
+  }
+  .product__inform-price {
+    font-size: 20px;
+  }
+  .product__inform-buttons-basket,
+  .product__inform-buttons-oneclick {
+    font-size: 17px;
+  }
+  .product__inform-size-title,
+  .product__inform-description-title,
+  .product__reviews-title {
+    font-size: 17px;
+  }
+  .product__inform-description-name,
+  .product__inform-description-composition,
+  .product__inform-description-text,
+  .product__inform-description-manufacturer {
+    font-size: 14px;
+  }
+}
+
+/* Medium Devices, Desktops */
+@media only screen and (min-width: 992px) {
+  /**/
+}
+
+/* Large Devices, Wide Screens */
+@media only screen and (min-width: 1200px) {
+  /**/
+}
+
+/**
+ * Owl Carousel v2.1.4
+ * Copyright 2013-2016 David Deutsch
+ * Licensed under MIT (https://github.com/OwlCarousel2/OwlCarousel2/blob/master/LICENSE)
+ */
+.owl-carousel,
+.owl-carousel .owl-item {
+  -webkit-tap-highlight-color: transparent;
+  position: relative;
+}
+
+.owl-carousel {
+  display: none;
+  width: 100%;
+  z-index: 1;
+}
+
+.owl-carousel .owl-stage {
+  position: relative;
+  -ms-touch-action: pan-Y;
+}
+
+.owl-carousel .owl-stage:after {
+  content: ".";
+  display: block;
+  clear: both;
+  visibility: hidden;
+  line-height: 0;
+  height: 0;
+}
+
+.owl-carousel .owl-stage-outer {
+  position: relative;
+  overflow: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+}
+
+.owl-carousel .owl-item {
+  min-height: 1px;
+  float: left;
+  -webkit-backface-visibility: hidden;
+  -webkit-touch-callout: none;
+}
+
+.owl-carousel .owl-item img {
+  display: block;
+  width: 100%;
+  -webkit-transform-style: preserve-3d;
+}
+
+.owl-carousel .owl-dots.disabled,
+.owl-carousel .owl-nav.disabled {
+  display: none;
+}
+
+.owl-carousel .owl-dot,
+.owl-carousel .owl-nav .owl-next,
+.owl-carousel .owl-nav .owl-prev {
+  cursor: pointer;
+  cursor: hand;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-loaded {
+  display: block;
+}
+
+.owl-carousel.owl-loading {
+  opacity: 0;
+  display: block;
+}
+
+.owl-carousel.owl-hidden {
+  opacity: 0;
+}
+
+.owl-carousel.owl-refresh .owl-item {
+  display: none;
+}
+
+.owl-carousel.owl-drag .owl-item {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.owl-carousel.owl-grab {
+  cursor: move;
+  cursor: -webkit-grab;
+  cursor: grab;
+}
+
+.owl-carousel.owl-rtl {
+  direction: rtl;
+}
+
+.owl-carousel.owl-rtl .owl-item {
+  float: right;
+}
+
+.no-js .owl-carousel {
+  display: block;
+}
+
+.owl-carousel .animated {
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+}
+
+.owl-carousel .owl-animated-in {
+  z-index: 0;
+}
+
+.owl-carousel .owl-animated-out {
+  z-index: 1;
+}
+
+.owl-carousel .fadeOut {
+  -webkit-animation-name: fadeOut;
+  animation-name: fadeOut;
+}
+
+@-webkit-keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.owl-height {
+  -webkit-transition: height 0.5s ease-in-out;
+  transition: height 0.5s ease-in-out;
+}
+
+.owl-carousel .owl-item .owl-lazy {
+  opacity: 0;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.owl-carousel .owl-item img.owl-lazy {
+  -webkit-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+}
+
+.owl-carousel .owl-video-wrapper {
+  position: relative;
+  height: 100%;
+  background: #000;
+}
+
+.owl-carousel .owl-video-play-icon {
+  position: absolute;
+  height: 80px;
+  width: 80px;
+  left: 50%;
+  top: 50%;
+  margin-left: -40px;
+  margin-top: -40px;
+  background: url(owl.video.play.png) no-repeat;
+  cursor: pointer;
+  z-index: 1;
+  -webkit-backface-visibility: hidden;
+  transition: -webkit-transform 0.1s ease;
+  -webkit-transition: -webkit-transform 0.1s ease;
+  transition: transform 0.1s ease;
+  transition: transform 0.1s ease, -webkit-transform 0.1s ease;
+}
+
+.owl-carousel .owl-video-play-icon:hover {
+  -webkit-transform: scale(1.3, 1.3);
+  -ms-transform: scale(1.3, 1.3);
+  transform: scale(1.3, 1.3);
+}
+
+.owl-carousel .owl-video-playing .owl-video-play-icon,
+.owl-carousel .owl-video-playing .owl-video-tn {
+  display: none;
+}
+
+.owl-carousel .owl-video-tn {
+  opacity: 0;
+  height: 100%;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  -webkit-transition: opacity 0.4s ease;
+  transition: opacity 0.4s ease;
+}
+
+.owl-carousel .owl-video-frame {
+  position: relative;
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+}
+
+/*!
+ *  Font Awesome 4.6.3 by @davegandy - http://fontawesome.io - @fontawesome
+ *  License - http://fontawesome.io/license (Font: SIL OFL 1.1, CSS: MIT License)
+ */
+/* FONT PATH
+ * -------------------------- */
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/fontawesome-webfont.eot?v=4.6.3");
+  src: url("../fonts/fontawesome-webfont.eot?#iefix&v=4.6.3") format("embedded-opentype"), url("../fonts/fontawesome-webfont.woff2?v=4.6.3") format("woff2"), url("../fonts/fontawesome-webfont.woff?v=4.6.3") format("woff"), url("../fonts/fontawesome-webfont.ttf?v=4.6.3") format("truetype"), url("../fonts/fontawesome-webfont.svg?v=4.6.3#fontawesomeregular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.fa {
+  display: inline-block;
+  font: normal normal normal 14px/1 FontAwesome;
+  font-size: inherit;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* makes the font 33% larger relative to the icon container */
+.fa-lg {
+  font-size: 1.33333em;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+
+.fa-2x {
+  font-size: 2em;
+}
+
+.fa-3x {
+  font-size: 3em;
+}
+
+.fa-4x {
+  font-size: 4em;
+}
+
+.fa-5x {
+  font-size: 5em;
+}
+
+.fa-fw {
+  width: 1.28571em;
+  text-align: center;
+}
+
+.fa-ul {
+  padding-left: 0;
+  margin-left: 2.14286em;
+  list-style-type: none;
+}
+.fa-ul>li {
+  position: relative;
+}
+
+.fa-li {
+  position: absolute;
+  left: -2.14286em;
+  width: 2.14286em;
+  top: 0.14286em;
+  text-align: center;
+}
+.fa-li.fa-lg {
+  left: -1.85714em;
+}
+
+.fa-border {
+  padding: 0.2em 0.25em 0.15em;
+  border: solid 0.08em #eee;
+  -webkit-border-radius: 0.1em;
+  border-radius: 0.1em;
+}
+
+.fa-pull-left {
+  float: left;
+}
+
+.fa-pull-right {
+  float: right;
+}
+
+.fa.fa-pull-left {
+  margin-right: 0.3em;
+}
+
+.fa.fa-pull-right {
+  margin-left: 0.3em;
+}
+
+/* Deprecated as of 4.4.0 */
+.pull-right {
+  float: right;
+}
+
+.pull-left {
+  float: left;
+}
+
+.fa.pull-left {
+  margin-right: 0.3em;
+}
+
+.fa.pull-right {
+  margin-left: 0.3em;
+}
+
+.fa-spin {
+  -webkit-animation: fa-spin 2s infinite linear;
+  animation: fa-spin 2s infinite linear;
+}
+
+.fa-pulse {
+  -webkit-animation: fa-spin 1s infinite steps(8);
+  animation: fa-spin 1s infinite steps(8);
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(359deg);
+    transform: rotate(359deg);
+  }
+}
+
+.fa-rotate-90 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1)";
+  -webkit-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+.fa-rotate-180 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2)";
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+.fa-rotate-270 {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=3)";
+  -webkit-transform: rotate(270deg);
+  -ms-transform: rotate(270deg);
+  transform: rotate(270deg);
+}
+
+.fa-flip-horizontal {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=0, mirror=1)";
+  -webkit-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+}
+
+.fa-flip-vertical {
+  -ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=2, mirror=1)";
+  -webkit-transform: scale(1, -1);
+  -ms-transform: scale(1, -1);
+  transform: scale(1, -1);
+}
+
+:root .fa-rotate-90,
+:root .fa-rotate-180,
+:root .fa-rotate-270,
+:root .fa-flip-horizontal,
+:root .fa-flip-vertical {
+  -webkit-filter: none;
+  filter: none;
+}
+
+.fa-stack {
+  position: relative;
+  display: inline-block;
+  width: 2em;
+  height: 2em;
+  line-height: 2em;
+  vertical-align: middle;
+}
+
+.fa-stack-1x,
+.fa-stack-2x {
+  position: absolute;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
+
+.fa-stack-1x {
+  line-height: inherit;
+}
+
+.fa-stack-2x {
+  font-size: 2em;
+}
+
+.fa-inverse {
+  color: #fff;
+}
+
+/* Font Awesome uses the Unicode Private Use Area (PUA) to ensure screen
+   readers do not read off random characters that represent icons */
+.fa-glass:before {
+  content: "";
+}
+
+.fa-music:before {
+  content: "";
+}
+
+.fa-search:before {
+  content: "";
+}
+
+.fa-envelope-o:before {
+  content: "";
+}
+
+.fa-heart:before {
+  content: "";
+}
+
+.fa-star:before {
+  content: "";
+}
+
+.fa-star-o:before {
+  content: "";
+}
+
+.fa-user:before {
+  content: "";
+}
+
+.fa-film:before {
+  content: "";
+}
+
+.fa-th-large:before {
+  content: "";
+}
+
+.fa-th:before {
+  content: "";
+}
+
+.fa-th-list:before {
+  content: "";
+}
+
+.fa-check:before {
+  content: "";
+}
+
+.fa-remove:before,
+.fa-close:before,
+.fa-times:before {
+  content: "";
+}
+
+.fa-search-plus:before {
+  content: "";
+}
+
+.fa-search-minus:before {
+  content: "";
+}
+
+.fa-power-off:before {
+  content: "";
+}
+
+.fa-signal:before {
+  content: "";
+}
+
+.fa-gear:before,
+.fa-cog:before {
+  content: "";
+}
+
+.fa-trash-o:before {
+  content: "";
+}
+
+.fa-home:before {
+  content: "";
+}
+
+.fa-file-o:before {
+  content: "";
+}
+
+.fa-clock-o:before {
+  content: "";
+}
+
+.fa-road:before {
+  content: "";
+}
+
+.fa-download:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-down:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-up:before {
+  content: "";
+}
+
+.fa-inbox:before {
+  content: "";
+}
+
+.fa-play-circle-o:before {
+  content: "";
+}
+
+.fa-rotate-right:before,
+.fa-repeat:before {
+  content: "";
+}
+
+.fa-refresh:before {
+  content: "";
+}
+
+.fa-list-alt:before {
+  content: "";
+}
+
+.fa-lock:before {
+  content: "";
+}
+
+.fa-flag:before {
+  content: "";
+}
+
+.fa-headphones:before {
+  content: "";
+}
+
+.fa-volume-off:before {
+  content: "";
+}
+
+.fa-volume-down:before {
+  content: "";
+}
+
+.fa-volume-up:before {
+  content: "";
+}
+
+.fa-qrcode:before {
+  content: "";
+}
+
+.fa-barcode:before {
+  content: "";
+}
+
+.fa-tag:before {
+  content: "";
+}
+
+.fa-tags:before {
+  content: "";
+}
+
+.fa-book:before {
+  content: "";
+}
+
+.fa-bookmark:before {
+  content: "";
+}
+
+.fa-print:before {
+  content: "";
+}
+
+.fa-camera:before {
+  content: "";
+}
+
+.fa-font:before {
+  content: "";
+}
+
+.fa-bold:before {
+  content: "";
+}
+
+.fa-italic:before {
+  content: "";
+}
+
+.fa-text-height:before {
+  content: "";
+}
+
+.fa-text-width:before {
+  content: "";
+}
+
+.fa-align-left:before {
+  content: "";
+}
+
+.fa-align-center:before {
+  content: "";
+}
+
+.fa-align-right:before {
+  content: "";
+}
+
+.fa-align-justify:before {
+  content: "";
+}
+
+.fa-list:before {
+  content: "";
+}
+
+.fa-dedent:before,
+.fa-outdent:before {
+  content: "";
+}
+
+.fa-indent:before {
+  content: "";
+}
+
+.fa-video-camera:before {
+  content: "";
+}
+
+.fa-photo:before,
+.fa-image:before,
+.fa-picture-o:before {
+  content: "";
+}
+
+.fa-pencil:before {
+  content: "";
+}
+
+.fa-map-marker:before {
+  content: "";
+}
+
+.fa-adjust:before {
+  content: "";
+}
+
+.fa-tint:before {
+  content: "";
+}
+
+.fa-edit:before,
+.fa-pencil-square-o:before {
+  content: "";
+}
+
+.fa-share-square-o:before {
+  content: "";
+}
+
+.fa-check-square-o:before {
+  content: "";
+}
+
+.fa-arrows:before {
+  content: "";
+}
+
+.fa-step-backward:before {
+  content: "";
+}
+
+.fa-fast-backward:before {
+  content: "";
+}
+
+.fa-backward:before {
+  content: "";
+}
+
+.fa-play:before {
+  content: "";
+}
+
+.fa-pause:before {
+  content: "";
+}
+
+.fa-stop:before {
+  content: "";
+}
+
+.fa-forward:before {
+  content: "";
+}
+
+.fa-fast-forward:before {
+  content: "";
+}
+
+.fa-step-forward:before {
+  content: "";
+}
+
+.fa-eject:before {
+  content: "";
+}
+
+.fa-chevron-left:before {
+  content: "";
+}
+
+.fa-chevron-right:before {
+  content: "";
+}
+
+.fa-plus-circle:before {
+  content: "";
+}
+
+.fa-minus-circle:before {
+  content: "";
+}
+
+.fa-times-circle:before {
+  content: "";
+}
+
+.fa-check-circle:before {
+  content: "";
+}
+
+.fa-question-circle:before {
+  content: "";
+}
+
+.fa-info-circle:before {
+  content: "";
+}
+
+.fa-crosshairs:before {
+  content: "";
+}
+
+.fa-times-circle-o:before {
+  content: "";
+}
+
+.fa-check-circle-o:before {
+  content: "";
+}
+
+.fa-ban:before {
+  content: "";
+}
+
+.fa-arrow-left:before {
+  content: "";
+}
+
+.fa-arrow-right:before {
+  content: "";
+}
+
+.fa-arrow-up:before {
+  content: "";
+}
+
+.fa-arrow-down:before {
+  content: "";
+}
+
+.fa-mail-forward:before,
+.fa-share:before {
+  content: "";
+}
+
+.fa-expand:before {
+  content: "";
+}
+
+.fa-compress:before {
+  content: "";
+}
+
+.fa-plus:before {
+  content: "";
+}
+
+.fa-minus:before {
+  content: "";
+}
+
+.fa-asterisk:before {
+  content: "";
+}
+
+.fa-exclamation-circle:before {
+  content: "";
+}
+
+.fa-gift:before {
+  content: "";
+}
+
+.fa-leaf:before {
+  content: "";
+}
+
+.fa-fire:before {
+  content: "";
+}
+
+.fa-eye:before {
+  content: "";
+}
+
+.fa-eye-slash:before {
+  content: "";
+}
+
+.fa-warning:before,
+.fa-exclamation-triangle:before {
+  content: "";
+}
+
+.fa-plane:before {
+  content: "";
+}
+
+.fa-calendar:before {
+  content: "";
+}
+
+.fa-random:before {
+  content: "";
+}
+
+.fa-comment:before {
+  content: "";
+}
+
+.fa-magnet:before {
+  content: "";
+}
+
+.fa-chevron-up:before {
+  content: "";
+}
+
+.fa-chevron-down:before {
+  content: "";
+}
+
+.fa-retweet:before {
+  content: "";
+}
+
+.fa-shopping-cart:before {
+  content: "";
+}
+
+.fa-folder:before {
+  content: "";
+}
+
+.fa-folder-open:before {
+  content: "";
+}
+
+.fa-arrows-v:before {
+  content: "";
+}
+
+.fa-arrows-h:before {
+  content: "";
+}
+
+.fa-bar-chart-o:before,
+.fa-bar-chart:before {
+  content: "";
+}
+
+.fa-twitter-square:before {
+  content: "";
+}
+
+.fa-facebook-square:before {
+  content: "";
+}
+
+.fa-camera-retro:before {
+  content: "";
+}
+
+.fa-key:before {
+  content: "";
+}
+
+.fa-gears:before,
+.fa-cogs:before {
+  content: "";
+}
+
+.fa-comments:before {
+  content: "";
+}
+
+.fa-thumbs-o-up:before {
+  content: "";
+}
+
+.fa-thumbs-o-down:before {
+  content: "";
+}
+
+.fa-star-half:before {
+  content: "";
+}
+
+.fa-heart-o:before {
+  content: "";
+}
+
+.fa-sign-out:before {
+  content: "";
+}
+
+.fa-linkedin-square:before {
+  content: "";
+}
+
+.fa-thumb-tack:before {
+  content: "";
+}
+
+.fa-external-link:before {
+  content: "";
+}
+
+.fa-sign-in:before {
+  content: "";
+}
+
+.fa-trophy:before {
+  content: "";
+}
+
+.fa-github-square:before {
+  content: "";
+}
+
+.fa-upload:before {
+  content: "";
+}
+
+.fa-lemon-o:before {
+  content: "";
+}
+
+.fa-phone:before {
+  content: "";
+}
+
+.fa-square-o:before {
+  content: "";
+}
+
+.fa-bookmark-o:before {
+  content: "";
+}
+
+.fa-phone-square:before {
+  content: "";
+}
+
+.fa-twitter:before {
+  content: "";
+}
+
+.fa-facebook-f:before,
+.fa-facebook:before {
+  content: "";
+}
+
+.fa-github:before {
+  content: "";
+}
+
+.fa-unlock:before {
+  content: "";
+}
+
+.fa-credit-card:before {
+  content: "";
+}
+
+.fa-feed:before,
+.fa-rss:before {
+  content: "";
+}
+
+.fa-hdd-o:before {
+  content: "";
+}
+
+.fa-bullhorn:before {
+  content: "";
+}
+
+.fa-bell:before {
+  content: "";
+}
+
+.fa-certificate:before {
+  content: "";
+}
+
+.fa-hand-o-right:before {
+  content: "";
+}
+
+.fa-hand-o-left:before {
+  content: "";
+}
+
+.fa-hand-o-up:before {
+  content: "";
+}
+
+.fa-hand-o-down:before {
+  content: "";
+}
+
+.fa-arrow-circle-left:before {
+  content: "";
+}
+
+.fa-arrow-circle-right:before {
+  content: "";
+}
+
+.fa-arrow-circle-up:before {
+  content: "";
+}
+
+.fa-arrow-circle-down:before {
+  content: "";
+}
+
+.fa-globe:before {
+  content: "";
+}
+
+.fa-wrench:before {
+  content: "";
+}
+
+.fa-tasks:before {
+  content: "";
+}
+
+.fa-filter:before {
+  content: "";
+}
+
+.fa-briefcase:before {
+  content: "";
+}
+
+.fa-arrows-alt:before {
+  content: "";
+}
+
+.fa-group:before,
+.fa-users:before {
+  content: "";
+}
+
+.fa-chain:before,
+.fa-link:before {
+  content: "";
+}
+
+.fa-cloud:before {
+  content: "";
+}
+
+.fa-flask:before {
+  content: "";
+}
+
+.fa-cut:before,
+.fa-scissors:before {
+  content: "";
+}
+
+.fa-copy:before,
+.fa-files-o:before {
+  content: "";
+}
+
+.fa-paperclip:before {
+  content: "";
+}
+
+.fa-save:before,
+.fa-floppy-o:before {
+  content: "";
+}
+
+.fa-square:before {
+  content: "";
+}
+
+.fa-navicon:before,
+.fa-reorder:before,
+.fa-bars:before {
+  content: "";
+}
+
+.fa-list-ul:before {
+  content: "";
+}
+
+.fa-list-ol:before {
+  content: "";
+}
+
+.fa-strikethrough:before {
+  content: "";
+}
+
+.fa-underline:before {
+  content: "";
+}
+
+.fa-table:before {
+  content: "";
+}
+
+.fa-magic:before {
+  content: "";
+}
+
+.fa-truck:before {
+  content: "";
+}
+
+.fa-pinterest:before {
+  content: "";
+}
+
+.fa-pinterest-square:before {
+  content: "";
+}
+
+.fa-google-plus-square:before {
+  content: "";
+}
+
+.fa-google-plus:before {
+  content: "";
+}
+
+.fa-money:before {
+  content: "";
+}
+
+.fa-caret-down:before {
+  content: "";
+}
+
+.fa-caret-up:before {
+  content: "";
+}
+
+.fa-caret-left:before {
+  content: "";
+}
+
+.fa-caret-right:before {
+  content: "";
+}
+
+.fa-columns:before {
+  content: "";
+}
+
+.fa-unsorted:before,
+.fa-sort:before {
+  content: "";
+}
+
+.fa-sort-down:before,
+.fa-sort-desc:before {
+  content: "";
+}
+
+.fa-sort-up:before,
+.fa-sort-asc:before {
+  content: "";
+}
+
+.fa-envelope:before {
+  content: "";
+}
+
+.fa-linkedin:before {
+  content: "";
+}
+
+.fa-rotate-left:before,
+.fa-undo:before {
+  content: "";
+}
+
+.fa-legal:before,
+.fa-gavel:before {
+  content: "";
+}
+
+.fa-dashboard:before,
+.fa-tachometer:before {
+  content: "";
+}
+
+.fa-comment-o:before {
+  content: "";
+}
+
+.fa-comments-o:before {
+  content: "";
+}
+
+.fa-flash:before,
+.fa-bolt:before {
+  content: "";
+}
+
+.fa-sitemap:before {
+  content: "";
+}
+
+.fa-umbrella:before {
+  content: "";
+}
+
+.fa-paste:before,
+.fa-clipboard:before {
+  content: "";
+}
+
+.fa-lightbulb-o:before {
+  content: "";
+}
+
+.fa-exchange:before {
+  content: "";
+}
+
+.fa-cloud-download:before {
+  content: "";
+}
+
+.fa-cloud-upload:before {
+  content: "";
+}
+
+.fa-user-md:before {
+  content: "";
+}
+
+.fa-stethoscope:before {
+  content: "";
+}
+
+.fa-suitcase:before {
+  content: "";
+}
+
+.fa-bell-o:before {
+  content: "";
+}
+
+.fa-coffee:before {
+  content: "";
+}
+
+.fa-cutlery:before {
+  content: "";
+}
+
+.fa-file-text-o:before {
+  content: "";
+}
+
+.fa-building-o:before {
+  content: "";
+}
+
+.fa-hospital-o:before {
+  content: "";
+}
+
+.fa-ambulance:before {
+  content: "";
+}
+
+.fa-medkit:before {
+  content: "";
+}
+
+.fa-fighter-jet:before {
+  content: "";
+}
+
+.fa-beer:before {
+  content: "";
+}
+
+.fa-h-square:before {
+  content: "";
+}
+
+.fa-plus-square:before {
+  content: "";
+}
+
+.fa-angle-double-left:before {
+  content: "";
+}
+
+.fa-angle-double-right:before {
+  content: "";
+}
+
+.fa-angle-double-up:before {
+  content: "";
+}
+
+.fa-angle-double-down:before {
+  content: "";
+}
+
+.fa-angle-left:before {
+  content: "";
+}
+
+.fa-angle-right:before {
+  content: "";
+}
+
+.fa-angle-up:before {
+  content: "";
+}
+
+.fa-angle-down:before {
+  content: "";
+}
+
+.fa-desktop:before {
+  content: "";
+}
+
+.fa-laptop:before {
+  content: "";
+}
+
+.fa-tablet:before {
+  content: "";
+}
+
+.fa-mobile-phone:before,
+.fa-mobile:before {
+  content: "";
+}
+
+.fa-circle-o:before {
+  content: "";
+}
+
+.fa-quote-left:before {
+  content: "";
+}
+
+.fa-quote-right:before {
+  content: "";
+}
+
+.fa-spinner:before {
+  content: "";
+}
+
+.fa-circle:before {
+  content: "";
+}
+
+.fa-mail-reply:before,
+.fa-reply:before {
+  content: "";
+}
+
+.fa-github-alt:before {
+  content: "";
+}
+
+.fa-folder-o:before {
+  content: "";
+}
+
+.fa-folder-open-o:before {
+  content: "";
+}
+
+.fa-smile-o:before {
+  content: "";
+}
+
+.fa-frown-o:before {
+  content: "";
+}
+
+.fa-meh-o:before {
+  content: "";
+}
+
+.fa-gamepad:before {
+  content: "";
+}
+
+.fa-keyboard-o:before {
+  content: "";
+}
+
+.fa-flag-o:before {
+  content: "";
+}
+
+.fa-flag-checkered:before {
+  content: "";
+}
+
+.fa-terminal:before {
+  content: "";
+}
+
+.fa-code:before {
+  content: "";
+}
+
+.fa-mail-reply-all:before,
+.fa-reply-all:before {
+  content: "";
+}
+
+.fa-star-half-empty:before,
+.fa-star-half-full:before,
+.fa-star-half-o:before {
+  content: "";
+}
+
+.fa-location-arrow:before {
+  content: "";
+}
+
+.fa-crop:before {
+  content: "";
+}
+
+.fa-code-fork:before {
+  content: "";
+}
+
+.fa-unlink:before,
+.fa-chain-broken:before {
+  content: "";
+}
+
+.fa-question:before {
+  content: "";
+}
+
+.fa-info:before {
+  content: "";
+}
+
+.fa-exclamation:before {
+  content: "";
+}
+
+.fa-superscript:before {
+  content: "";
+}
+
+.fa-subscript:before {
+  content: "";
+}
+
+.fa-eraser:before {
+  content: "";
+}
+
+.fa-puzzle-piece:before {
+  content: "";
+}
+
+.fa-microphone:before {
+  content: "";
+}
+
+.fa-microphone-slash:before {
+  content: "";
+}
+
+.fa-shield:before {
+  content: "";
+}
+
+.fa-calendar-o:before {
+  content: "";
+}
+
+.fa-fire-extinguisher:before {
+  content: "";
+}
+
+.fa-rocket:before {
+  content: "";
+}
+
+.fa-maxcdn:before {
+  content: "";
+}
+
+.fa-chevron-circle-left:before {
+  content: "";
+}
+
+.fa-chevron-circle-right:before {
+  content: "";
+}
+
+.fa-chevron-circle-up:before {
+  content: "";
+}
+
+.fa-chevron-circle-down:before {
+  content: "";
+}
+
+.fa-html5:before {
+  content: "";
+}
+
+.fa-css3:before {
+  content: "";
+}
+
+.fa-anchor:before {
+  content: "";
+}
+
+.fa-unlock-alt:before {
+  content: "";
+}
+
+.fa-bullseye:before {
+  content: "";
+}
+
+.fa-ellipsis-h:before {
+  content: "";
+}
+
+.fa-ellipsis-v:before {
+  content: "";
+}
+
+.fa-rss-square:before {
+  content: "";
+}
+
+.fa-play-circle:before {
+  content: "";
+}
+
+.fa-ticket:before {
+  content: "";
+}
+
+.fa-minus-square:before {
+  content: "";
+}
+
+.fa-minus-square-o:before {
+  content: "";
+}
+
+.fa-level-up:before {
+  content: "";
+}
+
+.fa-level-down:before {
+  content: "";
+}
+
+.fa-check-square:before {
+  content: "";
+}
+
+.fa-pencil-square:before {
+  content: "";
+}
+
+.fa-external-link-square:before {
+  content: "";
+}
+
+.fa-share-square:before {
+  content: "";
+}
+
+.fa-compass:before {
+  content: "";
+}
+
+.fa-toggle-down:before,
+.fa-caret-square-o-down:before {
+  content: "";
+}
+
+.fa-toggle-up:before,
+.fa-caret-square-o-up:before {
+  content: "";
+}
+
+.fa-toggle-right:before,
+.fa-caret-square-o-right:before {
+  content: "";
+}
+
+.fa-euro:before,
+.fa-eur:before {
+  content: "";
+}
+
+.fa-gbp:before {
+  content: "";
+}
+
+.fa-dollar:before,
+.fa-usd:before {
+  content: "";
+}
+
+.fa-rupee:before,
+.fa-inr:before {
+  content: "";
+}
+
+.fa-cny:before,
+.fa-rmb:before,
+.fa-yen:before,
+.fa-jpy:before {
+  content: "";
+}
+
+.fa-ruble:before,
+.fa-rouble:before,
+.fa-rub:before {
+  content: "";
+}
+
+.fa-won:before,
+.fa-krw:before {
+  content: "";
+}
+
+.fa-bitcoin:before,
+.fa-btc:before {
+  content: "";
+}
+
+.fa-file:before {
+  content: "";
+}
+
+.fa-file-text:before {
+  content: "";
+}
+
+.fa-sort-alpha-asc:before {
+  content: "";
+}
+
+.fa-sort-alpha-desc:before {
+  content: "";
+}
+
+.fa-sort-amount-asc:before {
+  content: "";
+}
+
+.fa-sort-amount-desc:before {
+  content: "";
+}
+
+.fa-sort-numeric-asc:before {
+  content: "";
+}
+
+.fa-sort-numeric-desc:before {
+  content: "";
+}
+
+.fa-thumbs-up:before {
+  content: "";
+}
+
+.fa-thumbs-down:before {
+  content: "";
+}
+
+.fa-youtube-square:before {
+  content: "";
+}
+
+.fa-youtube:before {
+  content: "";
+}
+
+.fa-xing:before {
+  content: "";
+}
+
+.fa-xing-square:before {
+  content: "";
+}
+
+.fa-youtube-play:before {
+  content: "";
+}
+
+.fa-dropbox:before {
+  content: "";
+}
+
+.fa-stack-overflow:before {
+  content: "";
+}
+
+.fa-instagram:before {
+  content: "";
+}
+
+.fa-flickr:before {
+  content: "";
+}
+
+.fa-adn:before {
+  content: "";
+}
+
+.fa-bitbucket:before {
+  content: "";
+}
+
+.fa-bitbucket-square:before {
+  content: "";
+}
+
+.fa-tumblr:before {
+  content: "";
+}
+
+.fa-tumblr-square:before {
+  content: "";
+}
+
+.fa-long-arrow-down:before {
+  content: "";
+}
+
+.fa-long-arrow-up:before {
+  content: "";
+}
+
+.fa-long-arrow-left:before {
+  content: "";
+}
+
+.fa-long-arrow-right:before {
+  content: "";
+}
+
+.fa-apple:before {
+  content: "";
+}
+
+.fa-windows:before {
+  content: "";
+}
+
+.fa-android:before {
+  content: "";
+}
+
+.fa-linux:before {
+  content: "";
+}
+
+.fa-dribbble:before {
+  content: "";
+}
+
+.fa-skype:before {
+  content: "";
+}
+
+.fa-foursquare:before {
+  content: "";
+}
+
+.fa-trello:before {
+  content: "";
+}
+
+.fa-female:before {
+  content: "";
+}
+
+.fa-male:before {
+  content: "";
+}
+
+.fa-gittip:before,
+.fa-gratipay:before {
+  content: "";
+}
+
+.fa-sun-o:before {
+  content: "";
+}
+
+.fa-moon-o:before {
+  content: "";
+}
+
+.fa-archive:before {
+  content: "";
+}
+
+.fa-bug:before {
+  content: "";
+}
+
+.fa-vk:before {
+  content: "";
+}
+
+.fa-weibo:before {
+  content: "";
+}
+
+.fa-renren:before {
+  content: "";
+}
+
+.fa-pagelines:before {
+  content: "";
+}
+
+.fa-stack-exchange:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-right:before {
+  content: "";
+}
+
+.fa-arrow-circle-o-left:before {
+  content: "";
+}
+
+.fa-toggle-left:before,
+.fa-caret-square-o-left:before {
+  content: "";
+}
+
+.fa-dot-circle-o:before {
+  content: "";
+}
+
+.fa-wheelchair:before {
+  content: "";
+}
+
+.fa-vimeo-square:before {
+  content: "";
+}
+
+.fa-turkish-lira:before,
+.fa-try:before {
+  content: "";
+}
+
+.fa-plus-square-o:before {
+  content: "";
+}
+
+.fa-space-shuttle:before {
+  content: "";
+}
+
+.fa-slack:before {
+  content: "";
+}
+
+.fa-envelope-square:before {
+  content: "";
+}
+
+.fa-wordpress:before {
+  content: "";
+}
+
+.fa-openid:before {
+  content: "";
+}
+
+.fa-institution:before,
+.fa-bank:before,
+.fa-university:before {
+  content: "";
+}
+
+.fa-mortar-board:before,
+.fa-graduation-cap:before {
+  content: "";
+}
+
+.fa-yahoo:before {
+  content: "";
+}
+
+.fa-google:before {
+  content: "";
+}
+
+.fa-reddit:before {
+  content: "";
+}
+
+.fa-reddit-square:before {
+  content: "";
+}
+
+.fa-stumbleupon-circle:before {
+  content: "";
+}
+
+.fa-stumbleupon:before {
+  content: "";
+}
+
+.fa-delicious:before {
+  content: "";
+}
+
+.fa-digg:before {
+  content: "";
+}
+
+.fa-pied-piper-pp:before {
+  content: "";
+}
+
+.fa-pied-piper-alt:before {
+  content: "";
+}
+
+.fa-drupal:before {
+  content: "";
+}
+
+.fa-joomla:before {
+  content: "";
+}
+
+.fa-language:before {
+  content: "";
+}
+
+.fa-fax:before {
+  content: "";
+}
+
+.fa-building:before {
+  content: "";
+}
+
+.fa-child:before {
+  content: "";
+}
+
+.fa-paw:before {
+  content: "";
+}
+
+.fa-spoon:before {
+  content: "";
+}
+
+.fa-cube:before {
+  content: "";
+}
+
+.fa-cubes:before {
+  content: "";
+}
+
+.fa-behance:before {
+  content: "";
+}
+
+.fa-behance-square:before {
+  content: "";
+}
+
+.fa-steam:before {
+  content: "";
+}
+
+.fa-steam-square:before {
+  content: "";
+}
+
+.fa-recycle:before {
+  content: "";
+}
+
+.fa-automobile:before,
+.fa-car:before {
+  content: "";
+}
+
+.fa-cab:before,
+.fa-taxi:before {
+  content: "";
+}
+
+.fa-tree:before {
+  content: "";
+}
+
+.fa-spotify:before {
+  content: "";
+}
+
+.fa-deviantart:before {
+  content: "";
+}
+
+.fa-soundcloud:before {
+  content: "";
+}
+
+.fa-database:before {
+  content: "";
+}
+
+.fa-file-pdf-o:before {
+  content: "";
+}
+
+.fa-file-word-o:before {
+  content: "";
+}
+
+.fa-file-excel-o:before {
+  content: "";
+}
+
+.fa-file-powerpoint-o:before {
+  content: "";
+}
+
+.fa-file-photo-o:before,
+.fa-file-picture-o:before,
+.fa-file-image-o:before {
+  content: "";
+}
+
+.fa-file-zip-o:before,
+.fa-file-archive-o:before {
+  content: "";
+}
+
+.fa-file-sound-o:before,
+.fa-file-audio-o:before {
+  content: "";
+}
+
+.fa-file-movie-o:before,
+.fa-file-video-o:before {
+  content: "";
+}
+
+.fa-file-code-o:before {
+  content: "";
+}
+
+.fa-vine:before {
+  content: "";
+}
+
+.fa-codepen:before {
+  content: "";
+}
+
+.fa-jsfiddle:before {
+  content: "";
+}
+
+.fa-life-bouy:before,
+.fa-life-buoy:before,
+.fa-life-saver:before,
+.fa-support:before,
+.fa-life-ring:before {
+  content: "";
+}
+
+.fa-circle-o-notch:before {
+  content: "";
+}
+
+.fa-ra:before,
+.fa-resistance:before,
+.fa-rebel:before {
+  content: "";
+}
+
+.fa-ge:before,
+.fa-empire:before {
+  content: "";
+}
+
+.fa-git-square:before {
+  content: "";
+}
+
+.fa-git:before {
+  content: "";
+}
+
+.fa-y-combinator-square:before,
+.fa-yc-square:before,
+.fa-hacker-news:before {
+  content: "";
+}
+
+.fa-tencent-weibo:before {
+  content: "";
+}
+
+.fa-qq:before {
+  content: "";
+}
+
+.fa-wechat:before,
+.fa-weixin:before {
+  content: "";
+}
+
+.fa-send:before,
+.fa-paper-plane:before {
+  content: "";
+}
+
+.fa-send-o:before,
+.fa-paper-plane-o:before {
+  content: "";
+}
+
+.fa-history:before {
+  content: "";
+}
+
+.fa-circle-thin:before {
+  content: "";
+}
+
+.fa-header:before {
+  content: "";
+}
+
+.fa-paragraph:before {
+  content: "";
+}
+
+.fa-sliders:before {
+  content: "";
+}
+
+.fa-share-alt:before {
+  content: "";
+}
+
+.fa-share-alt-square:before {
+  content: "";
+}
+
+.fa-bomb:before {
+  content: "";
+}
+
+.fa-soccer-ball-o:before,
+.fa-futbol-o:before {
+  content: "";
+}
+
+.fa-tty:before {
+  content: "";
+}
+
+.fa-binoculars:before {
+  content: "";
+}
+
+.fa-plug:before {
+  content: "";
+}
+
+.fa-slideshare:before {
+  content: "";
+}
+
+.fa-twitch:before {
+  content: "";
+}
+
+.fa-yelp:before {
+  content: "";
+}
+
+.fa-newspaper-o:before {
+  content: "";
+}
+
+.fa-wifi:before {
+  content: "";
+}
+
+.fa-calculator:before {
+  content: "";
+}
+
+.fa-paypal:before {
+  content: "";
+}
+
+.fa-google-wallet:before {
+  content: "";
+}
+
+.fa-cc-visa:before {
+  content: "";
+}
+
+.fa-cc-mastercard:before {
+  content: "";
+}
+
+.fa-cc-discover:before {
+  content: "";
+}
+
+.fa-cc-amex:before {
+  content: "";
+}
+
+.fa-cc-paypal:before {
+  content: "";
+}
+
+.fa-cc-stripe:before {
+  content: "";
+}
+
+.fa-bell-slash:before {
+  content: "";
+}
+
+.fa-bell-slash-o:before {
+  content: "";
+}
+
+.fa-trash:before {
+  content: "";
+}
+
+.fa-copyright:before {
+  content: "";
+}
+
+.fa-at:before {
+  content: "";
+}
+
+.fa-eyedropper:before {
+  content: "";
+}
+
+.fa-paint-brush:before {
+  content: "";
+}
+
+.fa-birthday-cake:before {
+  content: "";
+}
+
+.fa-area-chart:before {
+  content: "";
+}
+
+.fa-pie-chart:before {
+  content: "";
+}
+
+.fa-line-chart:before {
+  content: "";
+}
+
+.fa-lastfm:before {
+  content: "";
+}
+
+.fa-lastfm-square:before {
+  content: "";
+}
+
+.fa-toggle-off:before {
+  content: "";
+}
+
+.fa-toggle-on:before {
+  content: "";
+}
+
+.fa-bicycle:before {
+  content: "";
+}
+
+.fa-bus:before {
+  content: "";
+}
+
+.fa-ioxhost:before {
+  content: "";
+}
+
+.fa-angellist:before {
+  content: "";
+}
+
+.fa-cc:before {
+  content: "";
+}
+
+.fa-shekel:before,
+.fa-sheqel:before,
+.fa-ils:before {
+  content: "";
+}
+
+.fa-meanpath:before {
+  content: "";
+}
+
+.fa-buysellads:before {
+  content: "";
+}
+
+.fa-connectdevelop:before {
+  content: "";
+}
+
+.fa-dashcube:before {
+  content: "";
+}
+
+.fa-forumbee:before {
+  content: "";
+}
+
+.fa-leanpub:before {
+  content: "";
+}
+
+.fa-sellsy:before {
+  content: "";
+}
+
+.fa-shirtsinbulk:before {
+  content: "";
+}
+
+.fa-simplybuilt:before {
+  content: "";
+}
+
+.fa-skyatlas:before {
+  content: "";
+}
+
+.fa-cart-plus:before {
+  content: "";
+}
+
+.fa-cart-arrow-down:before {
+  content: "";
+}
+
+.fa-diamond:before {
+  content: "";
+}
+
+.fa-ship:before {
+  content: "";
+}
+
+.fa-user-secret:before {
+  content: "";
+}
+
+.fa-motorcycle:before {
+  content: "";
+}
+
+.fa-street-view:before {
+  content: "";
+}
+
+.fa-heartbeat:before {
+  content: "";
+}
+
+.fa-venus:before {
+  content: "";
+}
+
+.fa-mars:before {
+  content: "";
+}
+
+.fa-mercury:before {
+  content: "";
+}
+
+.fa-intersex:before,
+.fa-transgender:before {
+  content: "";
+}
+
+.fa-transgender-alt:before {
+  content: "";
+}
+
+.fa-venus-double:before {
+  content: "";
+}
+
+.fa-mars-double:before {
+  content: "";
+}
+
+.fa-venus-mars:before {
+  content: "";
+}
+
+.fa-mars-stroke:before {
+  content: "";
+}
+
+.fa-mars-stroke-v:before {
+  content: "";
+}
+
+.fa-mars-stroke-h:before {
+  content: "";
+}
+
+.fa-neuter:before {
+  content: "";
+}
+
+.fa-genderless:before {
+  content: "";
+}
+
+.fa-facebook-official:before {
+  content: "";
+}
+
+.fa-pinterest-p:before {
+  content: "";
+}
+
+.fa-whatsapp:before {
+  content: "";
+}
+
+.fa-server:before {
+  content: "";
+}
+
+.fa-user-plus:before {
+  content: "";
+}
+
+.fa-user-times:before {
+  content: "";
+}
+
+.fa-hotel:before,
+.fa-bed:before {
+  content: "";
+}
+
+.fa-viacoin:before {
+  content: "";
+}
+
+.fa-train:before {
+  content: "";
+}
+
+.fa-subway:before {
+  content: "";
+}
+
+.fa-medium:before {
+  content: "";
+}
+
+.fa-yc:before,
+.fa-y-combinator:before {
+  content: "";
+}
+
+.fa-optin-monster:before {
+  content: "";
+}
+
+.fa-opencart:before {
+  content: "";
+}
+
+.fa-expeditedssl:before {
+  content: "";
+}
+
+.fa-battery-4:before,
+.fa-battery-full:before {
+  content: "";
+}
+
+.fa-battery-3:before,
+.fa-battery-three-quarters:before {
+  content: "";
+}
+
+.fa-battery-2:before,
+.fa-battery-half:before {
+  content: "";
+}
+
+.fa-battery-1:before,
+.fa-battery-quarter:before {
+  content: "";
+}
+
+.fa-battery-0:before,
+.fa-battery-empty:before {
+  content: "";
+}
+
+.fa-mouse-pointer:before {
+  content: "";
+}
+
+.fa-i-cursor:before {
+  content: "";
+}
+
+.fa-object-group:before {
+  content: "";
+}
+
+.fa-object-ungroup:before {
+  content: "";
+}
+
+.fa-sticky-note:before {
+  content: "";
+}
+
+.fa-sticky-note-o:before {
+  content: "";
+}
+
+.fa-cc-jcb:before {
+  content: "";
+}
+
+.fa-cc-diners-club:before {
+  content: "";
+}
+
+.fa-clone:before {
+  content: "";
+}
+
+.fa-balance-scale:before {
+  content: "";
+}
+
+.fa-hourglass-o:before {
+  content: "";
+}
+
+.fa-hourglass-1:before,
+.fa-hourglass-start:before {
+  content: "";
+}
+
+.fa-hourglass-2:before,
+.fa-hourglass-half:before {
+  content: "";
+}
+
+.fa-hourglass-3:before,
+.fa-hourglass-end:before {
+  content: "";
+}
+
+.fa-hourglass:before {
+  content: "";
+}
+
+.fa-hand-grab-o:before,
+.fa-hand-rock-o:before {
+  content: "";
+}
+
+.fa-hand-stop-o:before,
+.fa-hand-paper-o:before {
+  content: "";
+}
+
+.fa-hand-scissors-o:before {
+  content: "";
+}
+
+.fa-hand-lizard-o:before {
+  content: "";
+}
+
+.fa-hand-spock-o:before {
+  content: "";
+}
+
+.fa-hand-pointer-o:before {
+  content: "";
+}
+
+.fa-hand-peace-o:before {
+  content: "";
+}
+
+.fa-trademark:before {
+  content: "";
+}
+
+.fa-registered:before {
+  content: "";
+}
+
+.fa-creative-commons:before {
+  content: "";
+}
+
+.fa-gg:before {
+  content: "";
+}
+
+.fa-gg-circle:before {
+  content: "";
+}
+
+.fa-tripadvisor:before {
+  content: "";
+}
+
+.fa-odnoklassniki:before {
+  content: "";
+}
+
+.fa-odnoklassniki-square:before {
+  content: "";
+}
+
+.fa-get-pocket:before {
+  content: "";
+}
+
+.fa-wikipedia-w:before {
+  content: "";
+}
+
+.fa-safari:before {
+  content: "";
+}
+
+.fa-chrome:before {
+  content: "";
+}
+
+.fa-firefox:before {
+  content: "";
+}
+
+.fa-opera:before {
+  content: "";
+}
+
+.fa-internet-explorer:before {
+  content: "";
+}
+
+.fa-tv:before,
+.fa-television:before {
+  content: "";
+}
+
+.fa-contao:before {
+  content: "";
+}
+
+.fa-500px:before {
+  content: "";
+}
+
+.fa-amazon:before {
+  content: "";
+}
+
+.fa-calendar-plus-o:before {
+  content: "";
+}
+
+.fa-calendar-minus-o:before {
+  content: "";
+}
+
+.fa-calendar-times-o:before {
+  content: "";
+}
+
+.fa-calendar-check-o:before {
+  content: "";
+}
+
+.fa-industry:before {
+  content: "";
+}
+
+.fa-map-pin:before {
+  content: "";
+}
+
+.fa-map-signs:before {
+  content: "";
+}
+
+.fa-map-o:before {
+  content: "";
+}
+
+.fa-map:before {
+  content: "";
+}
+
+.fa-commenting:before {
+  content: "";
+}
+
+.fa-commenting-o:before {
+  content: "";
+}
+
+.fa-houzz:before {
+  content: "";
+}
+
+.fa-vimeo:before {
+  content: "";
+}
+
+.fa-black-tie:before {
+  content: "";
+}
+
+.fa-fonticons:before {
+  content: "";
+}
+
+.fa-reddit-alien:before {
+  content: "";
+}
+
+.fa-edge:before {
+  content: "";
+}
+
+.fa-credit-card-alt:before {
+  content: "";
+}
+
+.fa-codiepie:before {
+  content: "";
+}
+
+.fa-modx:before {
+  content: "";
+}
+
+.fa-fort-awesome:before {
+  content: "";
+}
+
+.fa-usb:before {
+  content: "";
+}
+
+.fa-product-hunt:before {
+  content: "";
+}
+
+.fa-mixcloud:before {
+  content: "";
+}
+
+.fa-scribd:before {
+  content: "";
+}
+
+.fa-pause-circle:before {
+  content: "";
+}
+
+.fa-pause-circle-o:before {
+  content: "";
+}
+
+.fa-stop-circle:before {
+  content: "";
+}
+
+.fa-stop-circle-o:before {
+  content: "";
+}
+
+.fa-shopping-bag:before {
+  content: "";
+}
+
+.fa-shopping-basket:before {
+  content: "";
+}
+
+.fa-hashtag:before {
+  content: "";
+}
+
+.fa-bluetooth:before {
+  content: "";
+}
+
+.fa-bluetooth-b:before {
+  content: "";
+}
+
+.fa-percent:before {
+  content: "";
+}
+
+.fa-gitlab:before {
+  content: "";
+}
+
+.fa-wpbeginner:before {
+  content: "";
+}
+
+.fa-wpforms:before {
+  content: "";
+}
+
+.fa-envira:before {
+  content: "";
+}
+
+.fa-universal-access:before {
+  content: "";
+}
+
+.fa-wheelchair-alt:before {
+  content: "";
+}
+
+.fa-question-circle-o:before {
+  content: "";
+}
+
+.fa-blind:before {
+  content: "";
+}
+
+.fa-audio-description:before {
+  content: "";
+}
+
+.fa-volume-control-phone:before {
+  content: "";
+}
+
+.fa-braille:before {
+  content: "";
+}
+
+.fa-assistive-listening-systems:before {
+  content: "";
+}
+
+.fa-asl-interpreting:before,
+.fa-american-sign-language-interpreting:before {
+  content: "";
+}
+
+.fa-deafness:before,
+.fa-hard-of-hearing:before,
+.fa-deaf:before {
+  content: "";
+}
+
+.fa-glide:before {
+  content: "";
+}
+
+.fa-glide-g:before {
+  content: "";
+}
+
+.fa-signing:before,
+.fa-sign-language:before {
+  content: "";
+}
+
+.fa-low-vision:before {
+  content: "";
+}
+
+.fa-viadeo:before {
+  content: "";
+}
+
+.fa-viadeo-square:before {
+  content: "";
+}
+
+.fa-snapchat:before {
+  content: "";
+}
+
+.fa-snapchat-ghost:before {
+  content: "";
+}
+
+.fa-snapchat-square:before {
+  content: "";
+}
+
+.fa-pied-piper:before {
+  content: "";
+}
+
+.fa-first-order:before {
+  content: "";
+}
+
+.fa-yoast:before {
+  content: "";
+}
+
+.fa-themeisle:before {
+  content: "";
+}
+
+.fa-google-plus-circle:before,
+.fa-google-plus-official:before {
+  content: "";
+}
+
+.fa-fa:before,
+.fa-font-awesome:before {
+  content: "";
+}
+
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  padding: 0;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+.sr-only-focusable:active,
+.sr-only-focusable:focus {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  clip: auto;
+}
+
+/*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
+.fancybox-wrap,
+.fancybox-skin,
+.fancybox-outer,
+.fancybox-inner,
+.fancybox-image,
+.fancybox-wrap iframe,
+.fancybox-wrap object,
+.fancybox-nav,
+.fancybox-nav span,
+.fancybox-tmp {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  outline: none;
+  vertical-align: top;
+}
+
+.fancybox-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 8020;
+}
+
+.fancybox-skin {
+  position: relative;
+  background: #f9f9f9;
+  color: #444;
+  text-shadow: none;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+}
+
+.fancybox-opened {
+  z-index: 8030;
+}
+
+.fancybox-opened .fancybox-skin {
+  -webkit-box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+.fancybox-outer,
+.fancybox-inner {
+  position: relative;
+}
+
+.fancybox-inner {
+  overflow: hidden;
+}
+
+.fancybox-type-iframe .fancybox-inner {
+  -webkit-overflow-scrolling: touch;
+}
+
+.fancybox-error {
+  color: #444;
+  font: 14px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  margin: 0;
+  padding: 15px;
+  white-space: nowrap;
+}
+
+.fancybox-image,
+.fancybox-iframe {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.fancybox-image {
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#fancybox-loading,
+.fancybox-close,
+.fancybox-prev span,
+.fancybox-next span {
+  background-image: url("../libs/fancybox/source/fancybox_sprite.png");
+}
+
+#fancybox-loading {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  margin-top: -22px;
+  margin-left: -22px;
+  background-position: 0 -108px;
+  opacity: 0.8;
+  cursor: pointer;
+  z-index: 8060;
+}
+
+#fancybox-loading div {
+  width: 44px;
+  height: 44px;
+  background: url("../libs/fancybox/source/fancybox_loading.gif") center center no-repeat;
+}
+
+.fancybox-close {
+  position: absolute;
+  top: -18px;
+  right: -18px;
+  width: 36px;
+  height: 36px;
+  cursor: pointer;
+  z-index: 8040;
+}
+
+.fancybox-nav {
+  position: absolute;
+  top: 0;
+  width: 40%;
+  height: 100%;
+  cursor: pointer;
+  text-decoration: none;
+  background: transparent url("../libs/fancybox/source/blank.gif");
+  /* helps IE */
+  -webkit-tap-highlight-color: transparent;
+  z-index: 8040;
+}
+
+.fancybox-prev {
+  left: 0;
+}
+
+.fancybox-next {
+  right: 0;
+}
+
+.fancybox-nav span {
+  position: absolute;
+  top: 50%;
+  width: 36px;
+  height: 34px;
+  margin-top: -18px;
+  cursor: pointer;
+  z-index: 8040;
+  visibility: hidden;
+}
+
+.fancybox-prev span {
+  left: 10px;
+  background-position: 0 -36px;
+}
+
+.fancybox-next span {
+  right: 10px;
+  background-position: 0 -72px;
+}
+
+.fancybox-nav:hover span {
+  visibility: visible;
+}
+
+.fancybox-tmp {
+  position: absolute;
+  top: -99999px;
+  left: -99999px;
+  visibility: hidden;
+  max-width: 99999px;
+  max-height: 99999px;
+  overflow: visible !important;
+}
+
+/* Overlay helper */
+.fancybox-lock {
+  overflow: hidden !important;
+  width: auto;
+}
+
+.fancybox-lock body {
+  overflow: hidden !important;
+}
+
+.fancybox-lock-test {
+  overflow-y: hidden !important;
+}
+
+.fancybox-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+  display: none;
+  z-index: 8010;
+  background: url("../libs/fancybox/source/fancybox_overlay.png");
+}
+
+.fancybox-overlay-fixed {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+}
+
+.fancybox-lock .fancybox-overlay {
+  overflow: auto;
+  overflow-y: scroll;
+}
+
+/* Title helper */
+.fancybox-title {
+  visibility: hidden;
+  font: normal 13px/20px "Helvetica Neue",Helvetica,Arial,sans-serif;
+  position: relative;
+  text-shadow: none;
+  z-index: 8050;
+}
+
+.fancybox-opened .fancybox-title {
+  visibility: visible;
+}
+
+.fancybox-title-float-wrap {
+  position: absolute;
+  bottom: 0;
+  right: 50%;
+  margin-bottom: -35px;
+  z-index: 8050;
+  text-align: center;
+}
+
+.fancybox-title-float-wrap .child {
+  display: inline-block;
+  margin-right: -100%;
+  padding: 2px 20px;
+  background: transparent;
+  /* Fallback for web browsers that doesn't support RGBa */
+  background: rgba(0, 0, 0, 0.8);
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  text-shadow: 0 1px 2px #222;
+  color: #fff;
+  font-weight: bold;
+  line-height: 24px;
+  white-space: nowrap;
+}
+
+.fancybox-title-outside-wrap {
+  position: relative;
+  margin-top: 10px;
+  color: #fff;
+}
+
+.fancybox-title-inside-wrap {
+  padding-top: 10px;
+}
+
+.fancybox-title-over-wrap {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  color: #fff;
+  padding: 10px;
+  background: #000;
+  background: rgba(0, 0, 0, 0.8);
+}
+
+/*Retina graphics!*/
+@media only screen and (-webkit-min-device-pixel-ratio: 1.5), only screen and (min--moz-device-pixel-ratio: 1.5), only screen and (min-device-pixel-ratio: 1.5) {
+  #fancybox-loading,
+  .fancybox-close,
+  .fancybox-prev span,
+  .fancybox-next span {
+    background-image: url("../libs/fancybox/source/fancybox_sprite@2x.png");
+    background-size: 44px 152px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+  #fancybox-loading div {
+    background-image: url("../libs/fancybox/source/fancybox_loading@2x.gif");
+    background-size: 24px 24px;
+    /*The size of the normal image, half the size of the hi-res image*/
+  }
+}
+
+.fancybox-close {
+  top: 0;
+  right: 0;
+}

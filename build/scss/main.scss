@@ -1,0 +1,110 @@
+@import "bourbon";
+@import "components/vars.scss";
+@import "components/normalize.scss";
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/Tahoma.eot');
+	src: url('../fonts/Tahoma.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Tahoma.woff2') format('woff2'),
+		url('../fonts/Tahoma.woff') format('woff'),
+		url('../fonts/Tahoma.ttf') format('truetype'),
+		url('../fonts/Tahoma.svg#Tahoma') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Tahoma';
+	src: url('../fonts/Tahoma-Bold.eot');
+	src: url('../fonts/Tahoma-Bold.eot?#iefix') format('embedded-opentype'),
+		url('../fonts/Tahoma-Bold.woff2') format('woff2'),
+		url('../fonts/Tahoma-Bold.woff') format('woff'),
+		url('../fonts/Tahoma-Bold.ttf') format('truetype'),
+		url('../fonts/Tahoma-Bold.svg#Tahoma-Bold') format('svg');
+	font-weight: bold;
+	font-style: normal;
+}
+*::-webkit-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*:-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+*::-moz-placeholder {
+	color: #666;
+	opacity: 1;
+}
+
+*:-ms-input-placeholder {
+	color: #666;
+	opacity: 1;
+}
+body input:focus:required:invalid,
+body textarea:focus:required:invalid {
+	color: #666;
+}
+body input:required:valid,
+body textarea:required:valid {
+	color: #666;
+}
+*,
+*:before,
+*:after{
+	padding: 0;
+	box-sizing: border-box;
+	margin: 0;
+}
+body {
+	margin: 0;
+	font-size: 12px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1;
+	font-family: 'Tahoma', sans-serif;
+	color: #111;
+	background-color: #fff;
+}
+.container {
+	max-width: 768px;
+	margin: 0 auto;
+}
+.clearfix:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+.hidden {
+	display: none;
+}
+a {
+	outline: none !important;
+}
+
+
+//Custom Styles Here
+@import "components/header.scss";
+@import "components/index-main.scss";
+@import "components/footer.scss";
+//Catalog page
+@import "components/catalog.scss";
+//Catalog-list page
+@import "components/catalog-list-1.scss";
+@import "components/catalog-list-2.scss";
+//Product page
+@import "components/product.scss";
+
+//@import "build/scss/components/magnific-popup.scss";
+
+//ALWAYS END
+@import "components/media.scss";
+
+//Load Libs SASS
+//@import "html/libs/animate/animate.sass";
+@import "html/libs/owl.carousel/dist/assets/owl.carousel.min";
+//@import "html/libs/superfish/dist/css/superfish";
+@import "html/libs/font-awesome/scss/font-awesome.scss";
+@import "components/jquery.fancybox.scss";
+//@import "html/libs/jQuery.mmenu/dist/css/jquery.mmenu.all";
+//@import "html/libs/magnific-popup/dist/magnific-popup";

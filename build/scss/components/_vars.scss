@@ -1,0 +1,8 @@
+@import "bourbon";
+
+$main-color: #f02d68;
+$accent-color: #eb058a;
+@mixin p {
+    padding-left: 10px;
+    padding-right: 10px;
+}
